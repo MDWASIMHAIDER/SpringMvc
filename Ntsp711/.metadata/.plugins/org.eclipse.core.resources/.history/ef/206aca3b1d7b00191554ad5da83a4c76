@@ -1,0 +1,13 @@
+package com.nt.service;
+
+import com.nt.dto.PolicyDTO;
+
+public class PolicyServiceImpl implements PolicyService {
+
+	@Override
+	public PolicyDTO findPolcyByNumber(int num) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

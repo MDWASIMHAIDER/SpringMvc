@@ -1,0 +1,3 @@
+<frameset row="40%,60%">
+	<frame name="f1" src="search.html">
+</frameset>

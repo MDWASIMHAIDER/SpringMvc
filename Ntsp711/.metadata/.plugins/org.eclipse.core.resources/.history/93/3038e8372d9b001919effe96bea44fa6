@@ -1,0 +1,4 @@
+<h1 style="color:blue;text-align:center"><u>FrontController</u></h1>
+<a href="SytemDate.jsp">SYSDATE</a><br>
+<a href="SystemInfo.jsp">SYSTEM-INFO</a>
+<a href="Index.html">HOME</a>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="MVC-11-100P-CodeBssed">
+        <property name="context-root" value="MVC-11-100P-CodeBssed"/>
+    </wb-module>
+</project-modules>

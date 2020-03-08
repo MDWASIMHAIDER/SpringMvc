@@ -1,0 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1" isELIgnored="false"%>
+
+<h1>Ticket Status</h1>
+    
+   <a href="ticketStatus.htm?tno=12072">Get Status of VikramShila Exp</a><br>
+    <a href="ticketStatus.htm?tno=12071">Get Status of Hydrabad Exp</a><br>
+<a href="ticketStatus.htm?tno=12032">Get Status of VikramShila Exp</a><br>
+
+
+${result}

@@ -1,0 +1,24 @@
+package com.nt.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+@Repository("depodao")
+public class DepositeDAOImpl implements DepositeDAO {
+	
+	private static final String QUERY_DEPOSITE="UPDATE BANK_TRANSACTION SET BALANCE=BALANCE+? WHERE ACNO=?";
+	@Autowired
+	@Qualifier("template1")
+	private JdbcTemplate jt;
+	
+
+	@Override
+	public int deposite(int aacNo, int amt) {
+		int count=0;
+		count=jt.update("QUERY_DEPOSITE");
+		return count;
+	}
+
+}

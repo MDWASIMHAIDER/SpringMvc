@@ -1,0 +1,17 @@
+package com.nt.dto;
+
+import java.io.Serializable;
+
+import lombok.Data;
+
+
+@Data
+public class EmployeeSearchResultDTO implements Serializable {
+	
+	private int eno;
+	private String ename;
+	private String desg;
+	private float salary;
+	private int deptno;
+	private int mgrno;
+}

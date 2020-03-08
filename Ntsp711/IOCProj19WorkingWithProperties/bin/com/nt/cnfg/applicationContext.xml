@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	
+	<bean id="ppc" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="com/nt/commans/DBDetails.properties"/>
+	</bean>
+	<bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName"  value="${jdbc.driver}"/>
+		<property name="url" value="${jdbc.url}"/>
+		<property name="username" value="${db.user}"/>
+		<property name="password" value="${db.pwd}"/>
+	</bean>
+	<bean id="dao" class="com.nt.dao.LoanDAO">
+		<property name="ds" ref="ds"/>
+	</bean>
+	<bean id="service" class="com.nt.service.LoanService">
+		<constructor-arg ref="dao"/>
+	</bean>
+
+</beans>

@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" isELIgnored="false"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<h1>Download Page</h1>
+
+<c:choose>
+	<c:when test="${!empty filelist}">
+		<table border="=1">
+			<c:forEach var="f" items="${ filelist}">
+				<tr>
+					<td>${f}</td>
+					<td><a href="download.htm?fname=${f}">Document-download</a></td>
+				</tr>
+			</c:forEach>
+		</table>
+	</c:when>
+</c:choose>
+
+

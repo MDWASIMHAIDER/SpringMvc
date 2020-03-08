@@ -1,0 +1,71 @@
+package com.nt.controller;
+
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.Errors;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.nt.command.ScientistCommand;
+import com.nt.dto.ScientistDTO;
+import com.nt.service.ScientistService;
+
+@Controller
+public class ScientistRecordGeneration{
+	
+	@Autowired
+	private ScientistService service;
+
+	
+/*	public Object formBackingObject(HttpServletRequest req) throws Exception {
+		ScientistDTO dto=null;
+		ScientistCommand cmd=null;
+		int id=Integer.parseInt(req.getParameter("id"));
+		dto=service.scientistById(id);
+		cmd=new ScientistCommand();
+		BeanUtils.copyProperties(dto, cmd);
+		return cmd;
+	}*/
+	@RequestMapping("/home.htm")
+	public String showHome() {
+		return "welcome";
+	}
+	
+	/*@RequestMapping("/home.htm")
+	public String showHome() {
+		return "welcome";
+	}*/
+	
+	@RequestMapping("/report.htm")
+	public String getAllRecord(Map<String,List<ScientistDTO>>map,@ModelAttribute ScientistCommand scmd) {
+		List<ScientistDTO>listdto=null;
+		listdto=service.fetchAllScientist();
+		//System.out.println(listdto);
+		map.put("listdto",listdto);
+		return "record";
+	}
+	@RequestMapping("/insert.htm")
+	public ModelAndView editScientist(@ModelAttribute("scmd") ScientistCommand command,Errors err) {
+		String resMsg=null;
+		List<ScientistDTO>listdto=null;
+		ScientistCommand cmd=(ScientistCommand) command;
+		ScientistDTO dto=new ScientistDTO();
+		ModelAndView mav=null;
+		mav=new ModelAndView();
+		BeanUtils.copyProperties(cmd, dto);
+		resMsg=service.addScientist(dto);
+		listdto=service.fetchAllScientist();
+		mav.addObject("resMsg", resMsg);
+		mav.addObject("listdto",listdto);
+		mav.setViewName("insert");
+		return mav;
+	}
+
+}

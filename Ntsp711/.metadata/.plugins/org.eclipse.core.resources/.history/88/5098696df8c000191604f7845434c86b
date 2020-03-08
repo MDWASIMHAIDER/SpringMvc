@@ -1,0 +1,9 @@
+package com.nt.command;
+
+import org.springframework.web.multipart.MultipartFile;
+
+public class FileCommand {
+	
+	private MultipartFile resumeFile;
+	private MultipartFile photoFile;
+}

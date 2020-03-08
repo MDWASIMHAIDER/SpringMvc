@@ -1,0 +1,9 @@
+package com.nt.bo;
+
+public class ScientistBO {
+	private int sno;
+	private String sName;
+	private String domain;
+	private int experiance;
+	private int patantCounts;
+}

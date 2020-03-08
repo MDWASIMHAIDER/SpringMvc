@@ -1,0 +1,8 @@
+package com.nt.service;
+
+public class PayrollService {
+	
+	public float generateSalary(int eid,float basicSalary,boolean variablePay ) {
+		
+	}
+}

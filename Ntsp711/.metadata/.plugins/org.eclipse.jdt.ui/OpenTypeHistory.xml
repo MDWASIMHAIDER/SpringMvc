@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=BeanCollabrationLooselyCoupleRetest1/src&lt;com.nt.beans{Courier.java[Courier" modifiers="513" timestamp="1549896819622"/>
+<typeInfo handle="=IOCproject2-StrategyDp-CoreJava/C:\/Program Files\/Java\/jdk1.8.0_171\/jre\/lib\/rt.jar&lt;javax.xml.stream.events(EndDocument.class[EndDocument" modifiers="1537" timestamp="1565978421673"/>
+<typeInfo handle="=IOCproject2-StrategyDp-CoreJava/src&lt;com.nt.comp{Engine.java[Engine" modifiers="513" timestamp="1550074405538"/>
+<typeInfo handle="=IOCproject2-StrategyDp-Retest/C:\/Program Files\/Java\/jdk1.8.0_171\/jre\/lib\/rt.jar&lt;javax.xml.stream.events(EndElement.class[EndElement" modifiers="1537" timestamp="1565978421673"/>
+<typeInfo handle="=IOCproject2-StrategyDp-Retest/src&lt;com.nt.comp{Engine.java[Engine" modifiers="513" timestamp="1550078414640"/>
+<typeInfo handle="=IOCProj4WithLayeredApp/src&lt;com.nt.doa{StudentDao.java[StudentDao" modifiers="513" timestamp="1550655402083"/>
+<typeInfo handle="=IOCProj4WithLayeredApp/src&lt;com.nt.service{StudentService.java[StudentService" modifiers="513" timestamp="1550657278672"/>
+<typeInfo handle="=IOCProj4WithLayeredTicketReservationApp/src&lt;com.nt.dao{TicketDAO.java[TicketDAO" modifiers="513" timestamp="1550768655420"/>
+<typeInfo handle="=IOCProj4WithLayeredTicketReservationApp/src&lt;com.nt.service{TicketService.java[TicketService" modifiers="513" timestamp="1550767973094"/>
+<typeInfo handle="=IOCProj8StudentApp/src&lt;com.nt.service{StudentService.java[StudentService" modifiers="513" timestamp="1551797897341"/>
+<typeInfo handle="=IOCProj8StudentApp/C:\/Program Files\/Java\/jdk1.8.0_171\/jre\/lib\/rt.jar&lt;javax.rmi.CORBA(StubDelegate.class[StubDelegate" modifiers="1537" timestamp="1565978421673"/>
+<typeInfo handle="=IOCProj81StudentApp/src&lt;com.nt.service{StudentService.java[StudentService" modifiers="513" timestamp="1551809027832"/>
+<typeInfo handle="=IOCProj28-MethodReplacer/E:\/naresh software\/spring\/spring-framework-5.1.4.RELEASE-dist\/spring-framework-5.1.4.RELEASE\/libs\/spring-beans-5.1.4.RELEASE.jar&lt;org.springframework.beans.factory.support(MethodReplacer.class[MethodReplacer" modifiers="1537" timestamp="1547016870000"/>
+<typeInfo handle="=IOCProj28-MethodReplacer/E:\/naresh software\/spring\/spring-framework-5.1.4.RELEASE-dist\/spring-framework-5.1.4.RELEASE\/libs\/spring-core-5.1.4.RELEASE.jar&lt;org.springframework.cglib.proxy(MethodInterceptor.class[MethodInterceptor" modifiers="1537" timestamp="1547016864000"/>
+<typeInfo handle="=IOCProj30-FactoryBean-ServiceLocator-UseCase/src&lt;com.nt.external{ExternalIPLScoreComp.java[ExternalIPLScoreComp" modifiers="513" timestamp="1554571998342"/>
+<typeInfo handle="=IOCProj31-FactoryMethod-ServiceLocator-UseCase1/src&lt;com.nt.external{ExternalIPLScoreComp.java[ExternalIPLScoreComp" modifiers="513" timestamp="1554633214117"/>
+<typeInfo handle="=SelleniumAnnotationTest-Without-Xml/src&lt;com.nt.beans{Teacher.java[Teacher" modifiers="513" timestamp="1555916308548"/>
+<typeInfo handle="=SpringBoot-3-Core-StrategyDP/src\/main\/java&lt;com.nt.beans{Courier.java[Courier" modifiers="513" timestamp="1556545210880"/>
+<typeInfo handle="=SpringBoot-4-ConnectionPooling/src\/main\/java&lt;com.nt.dao{EmpDao.java[EmpDao" modifiers="513" timestamp="1556606975016"/>
+<typeInfo handle="=SpringBoot-4-ConnectionPooling/src\/main\/java&lt;com.nt.service{EmpService.java[EmpService" modifiers="513" timestamp="1556620198682"/>
+<typeInfo handle="=FirstMavenProj-with-100p-Code2/src\/main\/java&lt;com.nt.dao{DeptDAO.java[DeptDAO" modifiers="513" timestamp="1557252061707"/>
+<typeInfo handle="=FirstMavenProj-with-100p-Code2/src\/main\/java&lt;com.nt.service{DeptService.java[DeptService" modifiers="513" timestamp="1557252603906"/>
+<typeInfo handle="=SpringData1App/src\/main\/java&lt;com.nt.service{EmployeeService.java[EmployeeService" modifiers="513" timestamp="1557742896962"/>
+<typeInfo handle="=ServerBased-Conncetion-Pool-Web-App/src\/main\/java&lt;com.nt.dao{StudentDAO.java[StudentDAO" modifiers="513" timestamp="1557913124036"/>
+<typeInfo handle="=ServerBased-Conncetion-Pool-Web-App/src\/main\/java&lt;com.nt.service{StudentManagementService.java[StudentManagementService" modifiers="513" timestamp="1557843173683"/>
+<typeInfo handle="=DAO-Proj-Batch-Processring-/src\/main\/java&lt;com.nt.dao{PassangerDAO.java[PassangerDAO" modifiers="513" timestamp="1558247789023"/>
+<typeInfo handle="=DAO-Proj-Batch-Processring-/src\/main\/java&lt;com.nt.service{PassangerService.java[PassangerService" modifiers="513" timestamp="1558256361677"/>
+<typeInfo handle="=DAO-Proj-Batch-Processing-retest/src\/main\/java&lt;com.nt.dao{PassangerDAO.java[PassangerDAO" modifiers="513" timestamp="1558264119564"/>
+<typeInfo handle="=DAO-NamedParameterJdbcTemplate/src\/main\/java&lt;com.nt.dao{PolicyDAO.java[PolicyDAO" modifiers="513" timestamp="1558431202899"/>
+<typeInfo handle="=DAO-NamedParameterJdbcTemplate/src\/main\/java&lt;com.nt.service{PolicyService.java[PolicyService" modifiers="513" timestamp="1558432143981"/>
+<typeInfo handle="=DAO-NamedParameterJdbcTemplate/C:\/Program Files\/Java\/jdk1.8.0_171\/jre\/lib\/rt.jar&lt;org.omg.CORBA(PolicyOperations.class[PolicyOperations" modifiers="1537" timestamp="1565978421673"/>
+<typeInfo handle="=DAO-NamedParameterJdbcTemplate-retest/src\/main\/java&lt;com.nt.dao{PolicyDAO.java[PolicyDAO" modifiers="513" timestamp="1558369355772"/>
+<typeInfo handle="=DAO-NamedParameterJdbcTemplate-retest/C:\/Program Files\/Java\/jdk1.8.0_171\/jre\/lib\/rt.jar&lt;org.omg.CORBA(Policy.class[Policy" modifiers="1537" timestamp="1565978421673"/>
+<typeInfo handle="=DAO-NamedParameterJdbcTemplate-retest/src\/main\/java&lt;com.nt.service{PolicyService.java[PolicyService" modifiers="513" timestamp="1558370050469"/>
+<typeInfo handle="=Maven-SimpleJdbc-Insert/src\/main\/java&lt;com.nt.dao{EmployeeDAO.java[EmployeeDAO" modifiers="513" timestamp="1559055243095"/>
+<typeInfo handle="=Maven-SimpleJdbc-Insert/src\/main\/java&lt;com.nt.service{EmployeeService.java[EmployeeService" modifiers="513" timestamp="1559108115598"/>
+<typeInfo handle="=Simple-jdbc-Call/src\/main\/java&lt;com.nt.dao{EmployeeDAO.java[EmployeeDAO" modifiers="513" timestamp="1559125115518"/>
+<typeInfo handle="=Simple-jdbc-Call/src\/main\/java&lt;com.nt.service{EmployeeService.java[EmployeeService" modifiers="513" timestamp="1559146012406"/>
+<typeInfo handle="=AOP-Proj-SpringAOPDecl-Around-Advice/C:\/Users\/wasim\/.m2\/repository\/org\/springframework\/spring-aop\/5.1.7.RELEASE\/spring-aop-5.1.7.RELEASE.jar&lt;org.aopalliance.intercept(MethodInterceptor.class[MethodInterceptor" modifiers="1537" timestamp="1557840900605"/>
+<typeInfo handle="=TrasactionMgmt-DeclApproach-AOP-Local-FlatTX/src\/main\/java&lt;com.nt.dao{BankDAO.java[BankDAO" modifiers="513" timestamp="1561438526889"/>
+<typeInfo handle="=Transaction-Mgmt-Unchek/src\/main\/java&lt;com.nt.dao{BankDAO.java[BankDAO" modifiers="513" timestamp="1561460373019"/>
+<typeInfo handle="=Transaction-Mgmt-Unchek/src\/main\/java&lt;com.nt.service{BankService.java[BankService" modifiers="513" timestamp="1561461302886"/>
+<typeInfo handle="=MVC-Proj-1st-FrontController-Handler/src&lt;com.nt.controller{Handler.java[Handler" modifiers="513" timestamp="1561896518491"/>
+<typeInfo handle="=MVC-Proj1-FirstWebApp/E:\/naresh software\/spring\/spring-framework-5.1.4.RELEASE-dist\/spring-framework-5.1.4.RELEASE\/libs\/spring-webmvc-5.1.4.RELEASE.jar&lt;org.springframework.web.servlet.mvc(Controller.class[Controller" modifiers="1537" timestamp="1547016960000"/>
+<typeInfo handle="=MVCProj-3-LayeredApp/src\/main\/java&lt;com.nt.dao{EmployeeDAO.java[EmployeeDAO" modifiers="513" timestamp="1562866312348"/>
+<typeInfo handle="=MVC-Proj5-AbstractCommandController/src\/main\/java&lt;com.nt.service{PatientService.java[PatientService" modifiers="513" timestamp="1563297742314"/>
+<typeInfo handle="=MVCProj-8-LayeredApp-Using-SimpleFormController-solving-doublePosting-Validation/C:\/Users\/wasim\/.m2\/repository\/org\/springframework\/spring-context\/3.2.8.RELEASE\/spring-context-3.2.8.RELEASE.jar&lt;org.springframework.validation(Validator.class[Validator" modifiers="1537" timestamp="1563036830798"/>
+<typeInfo handle="=MVC-Anno-3-Layered-LoginApp-On-SimpleFormController/src\/main\/java&lt;com.nt.service{EmployeeSrvice.java[EmployeeSrvice" modifiers="513" timestamp="1565451982051"/>
+<typeInfo handle="=MVC-Anno-4-Layered-LoginApp-On-SimpleFormController-Validation/C:\/Users\/wasim\/.m2\/repository\/org\/springframework\/spring-context\/5.1.6.RELEASE\/spring-context-5.1.6.RELEASE.jar&lt;org.springframework.validation(Validator.class[Validator" modifiers="1537" timestamp="1557828910774"/>
+<typeInfo handle="=MVC-Anno-4-Layered-LoginApp-On-SimpleFormController-Validation/C:\/Program Files\/Java\/jdk1.8.0_171\/jre\/lib\/rt.jar&lt;javax.xml.bind(ValidationEventHandler.class[ValidationEventHandler" modifiers="1537" timestamp="1565978421673"/>
+<typeInfo handle="=MVC-11-100P-CodeBssed/src\/main\/java&lt;com.nt.service{WishService.java[WishService" modifiers="513" timestamp="1566395212807"/>
+<typeInfo handle="=Spring-Batch-1-APP/C:\/Users\/wasim\/.m2\/repository\/org\/springframework\/batch\/spring-batch-infrastructure\/4.1.2.RELEASE\/spring-batch-infrastructure-4.1.2.RELEASE.jar&lt;org.springframework.batch.item(ItemReader.class[ItemReader" modifiers="1537" timestamp="1567706862541"/>
+<typeInfo handle="=Spring-Batch-1-APP/C:\/Users\/wasim\/.m2\/repository\/org\/springframework\/batch\/spring-batch-infrastructure\/4.1.2.RELEASE\/spring-batch-infrastructure-4.1.2.RELEASE.jar&lt;org.springframework.batch.item(ItemProcessor.class[ItemProcessor" modifiers="1537" timestamp="1567706862541"/>
+<typeInfo handle="=Spring-Batch-1-APP/C:\/Users\/wasim\/.m2\/repository\/org\/springframework\/batch\/spring-batch-core\/4.1.2.RELEASE\/spring-batch-core-4.1.2.RELEASE.jar&lt;org.springframework.batch.core(ItemProcessListener.class[ItemProcessListener" modifiers="1537" timestamp="1567706855370"/>
+<typeInfo handle="=Spring-Batch-1-APP/C:\/Users\/wasim\/.m2\/repository\/org\/springframework\/batch\/spring-batch-infrastructure\/4.1.2.RELEASE\/spring-batch-infrastructure-4.1.2.RELEASE.jar&lt;org.springframework.batch.item(ItemWriter.class[ItemWriter" modifiers="1537" timestamp="1567706862541"/>
+<typeInfo handle="=Spring-Batch-1-APP/C:\/Users\/wasim\/.m2\/repository\/org\/springframework\/batch\/spring-batch-core\/4.1.2.RELEASE\/spring-batch-core-4.1.2.RELEASE.jar&lt;org.springframework.batch.core(ItemWriteListener.class[ItemWriteListener" modifiers="1537" timestamp="1567706855370"/>
+</typeInfoHistroy>

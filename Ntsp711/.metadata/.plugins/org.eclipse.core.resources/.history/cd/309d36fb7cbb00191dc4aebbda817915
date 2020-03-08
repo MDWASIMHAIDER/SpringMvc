@@ -1,0 +1,13 @@
+package com.nt.dao;
+
+import com.nt.bo.EmployeeBO;
+
+public class EmployeeDAOImpl implements EmployeeDAO {
+
+	@Override
+	public int validate(EmployeeBO bo) {
+		
+		return 0;
+	}
+
+}

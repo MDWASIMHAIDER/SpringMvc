@@ -1,0 +1,38 @@
+package com.nt.controller;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.nt.command.ScientistCommand;
+import com.nt.dto.ScientistDTO;
+import com.nt.service.ScientistService;
+
+@Controller
+public class ScientistRecordGeneration{
+	
+	@Autowired
+	private ScientistService service;
+
+	/*@Override
+	protected ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response)
+			throws Exception {
+		List<ScientistDTO>listdto=null;
+		listdto=service.fetchAllScientist();
+		System.out.println(listdto);
+		return new ModelAndView("record","listdto",listdto);
+	}*/
+	@RequestMapping(value="/AllRecord.htm")
+	public String getAllRecord(Map<String,List<ScientistDTO>>map,@ModelAttribute ScientistCommand scmd) {
+		List<ScientistDTO>listdto=null;
+		listdto=service.fetchAllScientist();
+		//System.out.println(listdto);
+		map.put("listdto",listdto);
+		return "record";
+	}
+	
+}

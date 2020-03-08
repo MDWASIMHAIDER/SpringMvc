@@ -1,0 +1,25 @@
+package com.nt.controller;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.nt.dto.EmployeeSearchDTO;
+import com.nt.service.EmployeeSearchService;
+
+@Controller
+public class EmployeeSearchController {
+	@Autowired
+	private EmployeeSearchService service;
+	
+	@RequestMapping("/response.htm")
+	public String processEmp(Map<String,Object>map) {
+		String res=null;
+		List<EmployeeSearchDTO>listdto=null;
+		listdto=service.searchEmp();
+		return "response";
+	}
+}

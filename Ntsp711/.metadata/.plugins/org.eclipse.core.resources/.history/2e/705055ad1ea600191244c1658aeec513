@@ -1,0 +1,21 @@
+package com.nt.dao;
+
+import java.util.List;
+
+import com.nt.bo.EmployeeSearchBO;
+import com.nt.bo.EmployeeSearchResultBO;
+
+public class EmployeeSearchResultDAO implements EmployeeSearchDAO {
+	
+	private static final String EMP_SEARCH_QUERY="SELECT ENO,ENAME,JOB,"
+			+ "SALARY,MGRNO,DEPTNO FROM MVC_EMPLOYEE "
+			+"WHERE ENO IS NOT NULL AND ENO=?"
+			+" OR ENAME IS NOT NULL AND ENAME LIKE ?"
+			+" OR JOB IS NOT NULL AND JOB LIKE ?"
+			+" OR SALARY IS NOT NULL AND SAL=?";
+	public List<EmployeeSearchResultBO> search(EmployeeSearchBO ebbo) {
+	
+		return null;
+	}
+
+}

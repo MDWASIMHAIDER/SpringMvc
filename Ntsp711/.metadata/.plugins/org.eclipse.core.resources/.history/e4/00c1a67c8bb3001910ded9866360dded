@@ -1,0 +1,7 @@
+package com.nt.command;
+
+public class RegistrationCommand {
+	private String name;
+	private String[] geneder;
+	private String address;
+}

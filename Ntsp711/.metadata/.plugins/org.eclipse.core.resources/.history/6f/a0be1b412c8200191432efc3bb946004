@@ -1,0 +1,15 @@
+package com.nt.service;
+
+import org.springframework.stereotype.Service;
+
+import com.nt.dto.EmployeeDTO;
+
+@Service("empservice")
+public class EmployeeServiceImpl implements EmployeeService {
+
+	public EmployeeDTO getEmlDetail(int eid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

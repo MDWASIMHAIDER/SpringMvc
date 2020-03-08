@@ -1,0 +1,23 @@
+package com.nt.dao;
+
+import java.util.List;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.nt.bo.ScientistBO;
+
+public class ScientistDAIOImpl implements ScientistDAO {
+	JdbcTemplate jt;
+	
+	
+	public ScientistDAIOImpl(JdbcTemplate jt) {
+		this.jt = jt;
+	}
+
+
+	public List<ScientistBO> getAllScientist() {
+		
+		return null;
+	}
+
+}

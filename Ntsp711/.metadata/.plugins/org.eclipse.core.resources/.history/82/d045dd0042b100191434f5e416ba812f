@@ -1,0 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" isELIgnored="false"%>
+   <%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+    
+    <h1 style="color:green;text-align:center">Edit Scientist Details</h1><br>
+<table>
+ 
+</table>
+
+    

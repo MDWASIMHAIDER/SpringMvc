@@ -1,0 +1,20 @@
+package com.nt.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.nt.bo.EmployeeBO;
+
+@Repository("dao")
+public class EmployeeDAOImpl implements EmployeeDAO {
+	@Autowired
+	private JdbcTemplate jt;
+	private static final String AUTHENTICATE_USER="SELECT COUNT(*) FROM USER_MVC";
+	@Override
+	public int validate(EmployeeBO bo) {
+		
+		return 0;
+	}
+
+}

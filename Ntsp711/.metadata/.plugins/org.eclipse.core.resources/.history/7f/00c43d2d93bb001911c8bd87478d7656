@@ -1,0 +1,31 @@
+package com.nt.service;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.nt.bo.EmployeeBO;
+import com.nt.dao.EmployeeDAO;
+import com.nt.dto.EmployeeDTO;
+
+@Service("service")
+public class EmployeeServiceImpl implements EmployeeSrvice {
+	@Autowired
+	private EmployeeDAO dao;
+	@Override
+	public String Authenticate(EmployeeDTO dto) {
+		EmployeeBO bo=null;
+		bo=new EmployeeBO();
+		int count=0;
+		BeanUtils.copyProperties(dto, bo);
+		System.out.println(bo.getPassword()+"bo called");
+		count=dao.validate(bo);
+		if(count==0) {
+			return "Authentication Falied";
+		}
+		else {
+			return "User Authenticated";
+		}
+	}
+
+}

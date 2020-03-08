@@ -1,0 +1,28 @@
+package com.nt.validator;
+
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
+
+import com.nt.command.EmployeeSearchCommand;
+
+public class EmployeeVlidator implements Validator {
+
+	public boolean supports(Class<?> clazz) {
+		return clazz.isAssignableFrom(EmployeeSearchCommand.class);
+	}
+
+	public void validate(Object target, Errors errors) {
+		EmployeeSearchCommand cmd=(EmployeeSearchCommand)target;
+		if(cmd.getEname().equals("") || cmd.getEname()==null)
+			errors.rejectValue("ename", "ename.required");
+		if(cmd.getDesg().equals("")||cmd.getDesg()==null)
+			errors.rejectValue("desg","desg.required");
+		if(cmd.getSalary()<=0||cmd.getSalary()==0)
+			errors.rejectValue("salary","salary.requred");
+		if(cmd.getDeptno()()<=0||cmd.getDeptno()==0)
+			errors.rejectValue("deptno","deptno.requred");
+		
+
+	}
+
+}

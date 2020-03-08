@@ -1,0 +1,14 @@
+package com.nt.service;
+
+import java.util.List;
+
+import com.nt.dto.PassangerDTO;
+
+public class PassangerServiceImpl implements PassangerService {
+
+	public String insertPassangerBatch(List<PassangerDTO> listdto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

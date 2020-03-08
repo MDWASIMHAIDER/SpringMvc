@@ -1,0 +1,26 @@
+package com.nt.HashCodeEqualsTest;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashCodeEqualsTest {
+
+	public static void main(String[] args) {
+		Test t=new Test(101);
+		Test t1=new Test(101);
+		System.out.println(t.hashCode()+" "+t1.hashCode());
+		Map<Test,String>map=new HashMap();
+		map.put(t, "wasim");
+		map.put(t1, "wasim");
+		System.out.println(map.size());
+
+	}
+
+}
+
+class Test{
+	int name;
+	public Test(int name) {
+		this.name=name;
+	}
+}

@@ -1,0 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1" isELIgnored="false"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+
+<table>
+	<form:form>
+		<tr><td>Customer Name</td><td><form:input path="cName"/></td></tr>
+		<tr><td>Customer Address</td><td><form:input path="cAddress"/></td></tr>
+		<tr><td>Customer Country</td><td><form:input path="country"/></td></tr>
+		<tr><td>Customer Gender</td><td><form:radiobuttons path="gender" items="${genderlist}"/></td></tr>
+	</form:form>
+</table>

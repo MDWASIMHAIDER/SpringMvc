@@ -1,0 +1,16 @@
+package com.nt.command;
+
+import java.util.Date;
+
+public class RegistrationCommand {
+	private String name;
+	private String[] geneder;
+	private String address;
+	private Date dob;
+	private String qualification;
+	private String desg;
+	private float salary;
+	private String expected_desg;
+	private String expected_intrest;
+	private float expected_age;
+}

@@ -1,0 +1,12 @@
+package com.nt.dao;
+
+import com.nt.bo.PolicyBO;
+
+public class PolicyDAOImpl implements PolicyDAO {
+
+	public PolicyBO getPolicyById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

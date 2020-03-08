@@ -1,0 +1,10 @@
+package com.nt.test;
+
+public class DistributedTXTest {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

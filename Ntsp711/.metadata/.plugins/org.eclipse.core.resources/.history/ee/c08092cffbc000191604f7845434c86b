@@ -1,0 +1,13 @@
+package com.nt.controller;
+
+import org.springframework.stereotype.Controller;
+
+import com.nt.command.FileCommand;
+
+@Controller
+public class FileController {
+	
+	public String showForm(FileCommand cmd) {
+		return "input_form";
+	}
+}

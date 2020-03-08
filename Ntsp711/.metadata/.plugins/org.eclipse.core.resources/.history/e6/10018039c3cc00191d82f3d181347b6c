@@ -1,0 +1,20 @@
+package com.nt.controller;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class TicketController {
+	
+	@RequestMapping("/home.htm")
+	public String showHome() {
+		return "ticketStatus";
+	}
+	
+	@RequestMapping("/ticketStatus.htm")
+	public String showStatus(Map<String,Object>map,@PathVariable(name=tno)) {
+		
+	}
+}

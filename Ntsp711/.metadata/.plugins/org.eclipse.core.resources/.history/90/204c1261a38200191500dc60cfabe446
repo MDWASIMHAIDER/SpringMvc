@@ -1,0 +1,14 @@
+package com.nt.advice;
+
+import org.aopalliance.intercept.MethodInterceptor;
+import org.aopalliance.intercept.MethodInvocation;
+
+public class PerformanceMonitorAdvice implements MethodInterceptor {
+
+	public Object invoke(MethodInvocation invocation) throws Throwable {
+		long start=0,end=0;
+		Object retVal=null;
+		return null;
+	}
+
+}

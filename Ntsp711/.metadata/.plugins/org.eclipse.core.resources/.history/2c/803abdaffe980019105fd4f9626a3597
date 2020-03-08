@@ -1,0 +1,11 @@
+package com.nt.dao;
+
+public class DepositeDAOImpl implements DepositeDAO {
+
+	@Override
+	public boolean deposite(int aacNo, int amt) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

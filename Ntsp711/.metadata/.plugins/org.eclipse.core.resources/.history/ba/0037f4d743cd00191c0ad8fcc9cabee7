@@ -1,0 +1,39 @@
+package com.nt.controller;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class TicketController {
+	
+	@GetMapping("/home.htm")
+	public String showHome() {
+		return "welcome";
+	}
+	@GetMapping("/welcome")
+	public String showWelcome() {
+		return "ticketStatus";
+	}
+	
+	@RequestMapping("/ticketStatus.htm")
+	public String showStatus(Map<String,Object>map,@RequestParam(value="tno")Integer tno) {
+		if(tno==12072) {
+			map.put("result","Train Delayed By 2 Hour");
+			map.put("tno",tno);
+		}
+		else if(tno==12071) {
+			map.put("result", "Train is running Ontime");
+			map.put("tno",tno);
+		}
+		else if(tno==12032) {
+			map.put("result", "Train is running  17 Hour delay");
+			map.put("tno",tno);
+		}
+		
+		return "currentStatus";
+	}
+}

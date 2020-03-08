@@ -1,0 +1,12 @@
+package com.nt.dao;
+
+import com.nt.bo.EmployeeBO;
+
+public class EmployeeDAOImpl implements EmployeeDAO {
+
+	public EmployeeBO getEmpDetail(int eid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

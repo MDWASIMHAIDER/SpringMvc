@@ -1,0 +1,13 @@
+package com.nt.bo;
+
+import java.math.BigDecimal;
+
+import lombok.Data;
+
+@Data
+public class EmployeeBO {
+	private BigDecimal eid;
+	private String ename;
+	private String desg;
+	private float salary;
+}

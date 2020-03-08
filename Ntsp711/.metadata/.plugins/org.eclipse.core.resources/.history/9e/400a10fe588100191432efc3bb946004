@@ -1,0 +1,19 @@
+package com.nt.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
+import org.springframework.stereotype.Repository;
+
+import com.nt.bo.EmployeeBO;
+
+@Repository("repo")
+public class EMployeeDAOImpl implements EmployeeDAO {
+
+	@Autowired
+	private SimpleJdbcInsert sji;
+	public int insertEmp(EmployeeBO bo) {
+		
+		return 0;
+	}
+
+}

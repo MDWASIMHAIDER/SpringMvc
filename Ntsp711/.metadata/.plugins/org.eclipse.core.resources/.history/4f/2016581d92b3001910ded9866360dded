@@ -1,0 +1,15 @@
+package com.nt.service;
+
+import javax.imageio.spi.RegisterableService;
+import javax.imageio.spi.ServiceRegistry;
+
+import com.nt.dto.RegistrationDTO;
+
+public class RegistrationServiceImpl implements RegistrationService{
+
+	public String registration(RegistrationDTO dto) {
+		
+		return null;
+	}
+
+}

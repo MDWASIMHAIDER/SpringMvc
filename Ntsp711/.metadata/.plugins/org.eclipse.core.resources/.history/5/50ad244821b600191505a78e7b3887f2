@@ -1,0 +1,42 @@
+package com.nt.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.web.servlet.mvc.SimpleFormController;
+
+public class RegistrationController extends SimpleFormController{
+	
+	@Override
+	protected Map referenceData(HttpServletRequest request) throws Exception {
+		List<String>hobbies=null;
+		List<String>countries=null;
+		List<String>product=null;
+		List<String>gender=null;
+		Map<String,List<String>> map=null;
+		hobbies=new ArrayList();
+		hobbies.add("cricket");
+		hobbies.add("football");
+		hobbies.add("kabaddi");
+		hobbies.add("badminton");
+		
+		countries=new ArrayList();
+		countries.add("india");
+		countries.add("pakistan");
+		countries.add("nepal");
+		countries.add("srilanka");
+		
+		product=new ArrayList();
+		product.add("dry fruit");
+		product.add("makeup");
+		product.add("games");
+		product.add("software");
+		
+		gender=new ArrayList();
+		gender.add("male");
+		gender.add("female");
+	}
+}

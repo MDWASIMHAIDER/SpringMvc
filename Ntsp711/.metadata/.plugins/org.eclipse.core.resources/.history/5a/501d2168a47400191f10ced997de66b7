@@ -1,0 +1,30 @@
+package com.example.main;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Import;
+
+import com.nt.confg.AppConfig;
+import com.nt.dto.EmployeeDTO;
+import com.nt.entity.Employee;
+import com.nt.service.EmployeeMnagmService;
+
+@SpringBootApplication
+@Import(value=AppConfig.class)
+public class SpringDataBootApp1Application {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx=null;
+		EmployeeMnagmService service=null;
+		EmployeeDTO dto=null;
+		ctx=SpringApplication.run(SpringDataBootApp1Application.class, args);
+		service=ctx.getBean("empservice",EmployeeMnagmService.class);
+		dto=new EmployeeDTO();
+		dto.setEid(1001);dto.setEname("wasim");
+		dto.setEmail("wasim.haider91@gmail.com");
+		dto.setSalary(150000);
+		service.registerEmp(dto);
+	}
+
+}

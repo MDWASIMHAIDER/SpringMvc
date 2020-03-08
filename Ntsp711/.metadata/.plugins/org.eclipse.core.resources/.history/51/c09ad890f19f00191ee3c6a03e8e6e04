@@ -1,0 +1,15 @@
+package com.nt.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.handler.AbstractHandlerMapping;
+
+public class AboutController extends AbstractHandlerMapping {
+
+	@Override
+	protected Object getHandlerInternal(HttpServletRequest request) throws Exception {
+		return new ModelAndView("about");
+	}
+
+}

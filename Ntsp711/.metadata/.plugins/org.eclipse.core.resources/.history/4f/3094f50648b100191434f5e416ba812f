@@ -1,0 +1,9 @@
+package com.nt.controller;
+
+import org.springframework.web.servlet.mvc.SimpleFormController;
+
+import com.nt.service.ScientistService;
+
+public class ScientistEditController extends SimpleFormController{
+	private ScientistService service;
+}

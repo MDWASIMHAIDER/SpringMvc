@@ -1,0 +1,14 @@
+package com.nt.dao;
+
+import java.util.List;
+
+import com.nt.bo.PassengerBO;
+
+public class PassangerDAOImpl implements PassangerDAO {
+
+	public int[] insert(List<PassengerBO> listbo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.nt.encoder;
+
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+public class CustomEncoder {
+	public static void main(String[] args) {
+		BCryptPasswordEncoder passwordEncoder =
+                new BCryptPasswordEncoder();
+String hashedPwd1 = passwordEncoder.encode("wasim91");
+String hashedPwd3 = passwordEncoder.encode("bharat91");
+System.out.println(hashedPwd1+"            "+hashedPwd3);
+
+	}
+
+}

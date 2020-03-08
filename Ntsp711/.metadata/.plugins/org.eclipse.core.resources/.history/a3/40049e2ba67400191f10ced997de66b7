@@ -1,0 +1,9 @@
+package com.nt.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.nt.entity.Employee;
+
+public interface EmployeeDAO extends CrudRepository<Employee, Integer> {
+	public Employee getDetail(int eid);
+}

@@ -1,0 +1,9 @@
+package com.nt.test;
+
+public class SimpleJdbcInsert_Test {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

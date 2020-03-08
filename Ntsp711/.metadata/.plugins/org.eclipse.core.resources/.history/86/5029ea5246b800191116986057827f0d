@@ -1,0 +1,17 @@
+package com.nt.service;
+
+import java.util.Calendar;
+
+import org.springframework.stereotype.Service;
+
+@Service("service")
+public class WishService {
+	
+	public int getTimeDetail() {
+		Calendar calender=null;
+		calender=Calendar.getInstance();
+		
+		return 0;
+		
+	}
+}

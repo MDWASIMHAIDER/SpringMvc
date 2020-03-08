@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean id="hand" class="com.nt.beans.RequestHandler" scope="singleton"/>
+
+<!-- 	when dependent bean scope is prototype then 
+	it craete more then one obj or its create iobj 
+	first for target bean then after target
+	if scope is singleton the  it creates
+	one obj only and first its create obj for dependent --> 
+	
+	
+	<bean id="cont" class="com.nt.beans.MyContainer" scope="singleton">
+		<lookup-method name="getRequestHandler"/>
+	</bean>
+
+</beans>

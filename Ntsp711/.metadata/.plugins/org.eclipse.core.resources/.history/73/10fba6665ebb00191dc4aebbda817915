@@ -1,0 +1,8 @@
+package com.nt.dto;
+
+import java.io.Serializable;
+
+public class EmployeeDTO implements Serializable {
+	private String uName;
+	private String password;
+}

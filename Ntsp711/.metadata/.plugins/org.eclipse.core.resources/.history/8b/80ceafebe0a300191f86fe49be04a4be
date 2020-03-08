@@ -1,0 +1,10 @@
+package com.nt.bo;
+
+public class EmployeeBO {
+	private String empNo;
+	private String eName;
+	private String job;
+	private float salary;
+	private String dept;
+
+}

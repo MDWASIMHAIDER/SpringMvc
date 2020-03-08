@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.nt.aspect.VariablePayAdcice.java&apos; to &apos;VariablePayAdvice.java&apos;&#x0D;&#x0A;- Original project: &apos;AOP-Proj-BeforeAdvice-Auditing&apos;&#x0D;&#x0A;- Original element: &apos;com.nt.aspect.VariablePayAdcice.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.nt.aspect.VariablePayAdvice.java&apos;" description="Rename compilation unit &apos;VariablePayAdcice.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java&lt;com.nt.aspect{VariablePayAdcice.java" name="VariablePayAdvice.java" references="false" stamp="1559555482805" version="1.0"/>
+</session>

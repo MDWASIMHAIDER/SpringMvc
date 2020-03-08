@@ -1,0 +1,13 @@
+package com.nt.dao;
+
+import com.nt.dto.PolicyDTO;
+
+public class PolicyDAOImpl implements PolicyDAO {
+
+	@Override
+	public PolicyDTO findPolicyById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

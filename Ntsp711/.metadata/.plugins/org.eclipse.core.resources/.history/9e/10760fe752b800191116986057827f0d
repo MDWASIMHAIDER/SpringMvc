@@ -1,0 +1,42 @@
+package com.nt.controller;
+
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.nt.service.WishService;
+
+@Controller
+public class WishController {
+	@Autowired
+	private WishService service;
+	
+/*	@RequestMapping("/result.htm")//mapping incomming request with uri result.htm
+	public ModelAndView process() {
+		String wishMsg=null;
+		wishMsg=service.getTimeDetail();
+		return new ModelAndView("result","wishMsg",wishMsg);
+	}*/
+	/*@RequestMapping("/result.htm")
+	public String process(Model model) {
+		String wishMsg=null;
+		wishMsg=service.getTimeDetail();
+		model.addAttribute("wishMsg",wishMsg);
+		return "result";//logical view name
+	}*/
+	
+	/*@RequestMapping("/result.htm")
+	public String process(ModelMap map) {
+		String wishMsg=null;
+		wishMsg=service.getTimeDetail();
+		map.addAttribute("wishMsg", wishMsg);
+		return "result";
+	}*/
+	
+	@RequestMapping("/result")
+	public String process(Map<String,Object>map) {
+		
+	}
+}

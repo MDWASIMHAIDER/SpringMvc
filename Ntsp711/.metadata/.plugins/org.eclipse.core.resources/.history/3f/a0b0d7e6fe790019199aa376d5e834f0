@@ -1,0 +1,9 @@
+package com.nt.bo;
+
+public class EmployeeBO {
+	private int eno;
+	private String ename;
+	private String add;
+	private int salary;
+
+}

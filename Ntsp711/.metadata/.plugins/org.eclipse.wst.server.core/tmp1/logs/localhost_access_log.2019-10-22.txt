@@ -1,0 +1,8 @@
+127.0.0.1 - - [22/Oct/2019:15:42:17 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [22/Oct/2019:15:42:19 +0530] "GET /MVCProj11-AbstractWizardFormController/ HTTP/1.1" 200 133
+0:0:0:0:0:0:0:1 - - [22/Oct/2019:15:42:19 +0530] "GET /favicon.ico HTTP/1.1" 404 1020
+0:0:0:0:0:0:0:1 - - [22/Oct/2019:15:42:25 +0530] "GET /MVCProj11-AbstractWizardFormController/register.htm HTTP/1.1" 200 587
+0:0:0:0:0:0:0:1 - - [22/Oct/2019:15:42:44 +0530] "POST /MVCProj11-AbstractWizardFormController/register.htm HTTP/1.1" 200 643
+0:0:0:0:0:0:0:1 - - [22/Oct/2019:15:43:02 +0530] "POST /MVCProj11-AbstractWizardFormController/register.htm HTTP/1.1" 200 688
+0:0:0:0:0:0:0:1 - - [22/Oct/2019:15:43:25 +0530] "POST /MVCProj11-AbstractWizardFormController/register.htm HTTP/1.1" 200 193
+0:0:0:0:0:0:0:1 - - [22/Oct/2019:15:43:37 +0530] "GET /MVCProj11-AbstractWizardFormController/welcome.htm HTTP/1.1" 200 133

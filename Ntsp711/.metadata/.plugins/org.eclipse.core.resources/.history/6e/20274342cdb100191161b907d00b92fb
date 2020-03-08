@@ -1,0 +1,14 @@
+package com.nt.controller;
+
+import org.springframework.web.servlet.mvc.SimpleFormController;
+
+import com.nt.service.ScientistService;
+
+public class ScientistInsertController extends SimpleFormController{
+	private ScientistService srvice;
+
+	public ScientistInsertController(ScientistService srvice) {
+		this.srvice = srvice;
+	}
+	
+}

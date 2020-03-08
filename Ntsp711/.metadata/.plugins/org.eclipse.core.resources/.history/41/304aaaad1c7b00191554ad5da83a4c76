@@ -1,0 +1,23 @@
+package com.nt.dao;
+
+import java.util.HashMap;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.nt.bo.PolicyBO;
+
+@Repository("dao")
+public class PolicyDAOImpl implements PolicyDAO {
+	private static final String GET_POLICY_BY_ID="SELECT POLICYID,POLICYNAME,TENURE,COMAPNY,INITIALAMOUNT WHERE POLICYID=:POLICYID";
+		@Autowired
+		private NamedParameterJdbcTemplate jt;
+		Map<String,Object>param=new HashMap();
+	@Override
+	public PolicyBO findPolicyById(int id) {
+		PolicyBO bo=new 
+		return null;
+	}
+
+}

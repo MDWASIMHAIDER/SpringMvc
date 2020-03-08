@@ -1,0 +1,32 @@
+package com.nt.dao;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.simple.SimpleJdbcCall;
+import org.springframework.stereotype.Repository;
+
+import com.nt.bo.EmployeeBO;
+
+@Repository("empdao")
+public class EmployeeDAOImpl implements EmployeeDAO {
+	@Autowired
+	SimpleJdbcCall sjc;
+	public EmployeeBO getEmpDetail(int eid) {
+		sjc.setProcedureName("p_get_emp_By_eid");
+		Map<String,Object>inparam=null;
+		inparam=new HashMap();
+		Map<String,Object>outparam=null;
+		inparam.put("empid", eid);
+		System.out.println(eid);
+		outparam=sjc.execute(inparam);
+		EmployeeBO bo=new EmployeeBO();
+		bo.setEid((Integer) outparam.get("eid"));
+		bo.setEname((String)outparam.get("ename"));
+		bo.setDesg((String) outparam.get("desg"));
+		bo.setSalary((Float) outparam.get("salary"));
+		return bo;
+	}
+
+}

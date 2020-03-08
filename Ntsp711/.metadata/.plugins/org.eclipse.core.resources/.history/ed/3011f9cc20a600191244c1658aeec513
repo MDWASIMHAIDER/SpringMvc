@@ -1,0 +1,31 @@
+package com.nt.dao;
+
+import java.util.List;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.nt.bo.EmployeeSearchBO;
+import com.nt.bo.EmployeeSearchResultBO;
+
+public class EmployeeSearchResultDAO implements EmployeeSearchDAO {
+	
+	private static final String EMP_SEARCH_QUERY="SELECT ENO,ENAME,DESG,"
+			+ "SALARY,MGRNO,DEPTNO FROM MVC_EMPLOYEE "
+			+"WHERE ENO IS NOT NULL AND ENO=?"
+			+" OR ENAME IS NOT NULL AND ENAME LIKE ?"
+			+" OR JOB IS NOT NULL AND DESG LIKE ?"
+			+" OR SALARY IS NOT NULL AND SAL=?";
+	
+	private JdbcTemplate jt;
+	
+	public void setJdbcTemplate(JdbcTemplate jt) {
+		this.jt=jt;
+	}
+	
+	public List<EmployeeSearchResultBO> search(EmployeeSearchBO ebbo) {
+		List<EmployeeSearchResultBO> listresbo=null;
+		listresbo=jt.query(EMP_SEARCH_QUERY, ebbo.getEno(),ebbo.getEname(),ebbo.getDesg(),ebbo.getSalary())
+		return null;
+	}
+
+}

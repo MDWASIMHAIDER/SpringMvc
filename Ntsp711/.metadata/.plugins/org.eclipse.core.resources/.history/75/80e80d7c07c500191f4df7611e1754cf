@@ -1,0 +1,16 @@
+package com.nt.service;
+
+import org.springframework.stereotype.Service;
+
+import com.nt.dto.LoginDTO;
+
+@Service("service")
+public class LoginServiceImpl implements LoginService {
+
+	@Override
+	public String LoginAuthentication(LoginDTO dto) {
+		
+		return null;
+	}
+
+}

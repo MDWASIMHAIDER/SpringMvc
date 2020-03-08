@@ -1,0 +1,33 @@
+
+May 22, 2019 14:57:46.69 NEW SESSION
+May 22, 2019 14:57:46.69 [0522/145746.680:ERROR:crash_report_database_win.cc(428)] unexpected header
+May 22, 2019 15:03:31.55 [0522/150331.557:ERROR:crash_report_database_win.cc(428)] unexpected header
+May 22, 2019 15:06:11.90 [0522/150611.904:ERROR:crash_report_database_win.cc(428)] unexpected header
+
+Jul 29, 2019 14:14:29.26 NEW SESSION
+Jul 29, 2019 14:14:29.26 [10616:10264:0729/141429.226:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -105
+Jul 29, 2019 14:14:55.00 [10616:10264:0729/141455.000:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -105
+Jul 29, 2019 14:15:35.33 [10616:10264:0729/141535.333:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -105
+Jul 29, 2019 15:27:54.54 [10616:10264:0729/152754.538:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -7
+Jul 29, 2019 19:39:40.04 [10616:10264:0729/171042.018:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -21
+Jul 29, 2019 19:39:40.37 [10616:10736:0729/193936.921:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+Jul 29, 2019 19:39:44.77 [10616:10264:0729/193944.772:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -21
+
+Aug 16, 2019 21:38:14.55 NEW SESSION
+Aug 16, 2019 21:38:14.55 [9604:8764:0816/213814.527:ERROR:socket_stream.cc(219)] Closing stream with result -2
+Aug 16, 2019 22:49:55.55 [9604:9948:0816/224955.546:ERROR:gcm_channel_status_request.cc(146)] GCM channel request failed.
+Aug 16, 2019 22:49:56.65 [9604:8764:0816/224956.658:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -21
+
+Sep 02, 2019 23:27:04.22 NEW SESSION
+Sep 02, 2019 23:27:04.22 [9328:5560:0902/232704.130:ERROR:socket_stream.cc(219)] Closing stream with result -2
+Sep 03, 2019 15:35:34.70 [9328:5560:0903/153534.701:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -21
+Sep 03, 2019 15:35:34.86 [9328:9744:0903/153534.717:ERROR:gcm_channel_status_request.cc(146)] GCM channel request failed.
+
+Sep 12, 2019 17:11:00.34 NEW SESSION
+Sep 12, 2019 17:11:00.34 [2536:10052:0912/171100.341:ERROR:browser_process_sub_thread.cc(203)] Waited 261 ms for network service
+Sep 12, 2019 17:12:33.25 [8480:8592:0912/171233.257:ERROR:browser_process_sub_thread.cc(203)] Waited 171 ms for network service
+Sep 12, 2019 17:13:49.23 [8844:6692:0912/171349.238:ERROR:browser_process_sub_thread.cc(203)] Waited 298 ms for network service
+Sep 12, 2019 17:14:18.34 [6772:8652:0912/171418.340:ERROR:browser_process_sub_thread.cc(203)] Waited 168 ms for network service
+Sep 12, 2019 17:15:19.73 [10216:7740:0912/171519.735:ERROR:browser_process_sub_thread.cc(203)] Waited 111 ms for network service
+Sep 12, 2019 19:10:50.42 [9744:9224:0912/191050.426:ERROR:browser_process_sub_thread.cc(203)] Waited 292 ms for network service
+Sep 12, 2019 19:24:33.52 [9780:9860:0912/192433.528:ERROR:browser_process_sub_thread.cc(203)] Waited 5 ms for network service

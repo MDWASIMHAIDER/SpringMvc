@@ -1,0 +1,13 @@
+package com.nt.dao;
+
+import com.nt.bo.LoginBO;
+
+public class LoginDAOImpl implements LoginDAO {
+	private static final String AUTHENTICATE_QUERY="SELECT COUNT(*) FROM USER_MVC WHERE UNAME=? And PASSWORD=?";
+@Override
+	public int authenticate(LoginBO bo) {
+		
+		return 0;
+	}
+
+}

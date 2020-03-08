@@ -1,0 +1,9 @@
+package com.nt.command;
+
+public class EmployeeSearchCommand {
+	private int no;
+	private String name;
+	private String desg;
+	private float salary;
+
+}

@@ -1,0 +1,52 @@
+package com.nt.bo;
+
+import lombok.Data;
+
+
+public class EmployeeSearchBO {
+	private int eno;
+	private String ename;
+	private String desg;
+	private float salary;
+	private String tstatus;
+	private float tbill;
+	
+	public String getTstatus() {
+		return tstatus;
+	}
+	public void setTstatus(String tstatus) {
+		this.tstatus = tstatus;
+	}
+	public float getTbill() {
+		return tbill;
+	}
+	public void setTbill(float tbill) {
+		this.tbill = tbill;
+	}
+
+	public int getEno() {
+		return eno;
+	}
+	public void setEno(int eno) {
+		this.eno = eno;
+	}
+	public String getEname() {
+		return ename;
+	}
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+	public String getDesg() {
+		return desg;
+	}
+	public void setDesg(String desg) {
+		this.desg = desg;
+	}
+	public float getSalary() {
+		return salary;
+	}
+	public void setSalary(float salary) {
+		this.salary = salary;
+	}
+	
+}

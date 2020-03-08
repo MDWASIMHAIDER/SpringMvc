@@ -1,0 +1,8 @@
+package com.nt.service;
+
+import javax.imageio.spi.RegisterableService;
+import javax.imageio.spi.ServiceRegistry;
+
+public class RegistrationServiceImpl implements RegistrationService{
+
+}

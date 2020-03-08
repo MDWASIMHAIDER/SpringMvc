@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="480" key="width"/>
+		<item value="443" key="x"/>
+		<item value="11" key="y"/>
+		<item value="530" key="height"/>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="IOCProj16DependencyCheck2"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="IOCProj16DependencyCheck2"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+			<item value="m"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\FrameWork\Spring\Ntsp711\MVCProj-6-LayeredApp-Using-SimpleFormController"/>
+			<item value="D:\FrameWork\Spring\Ntsp711\Mvc-Proj-SpringSecurity"/>
+			<item value="D:\FrameWork\Spring\Ntsp711\MVC-11-100P-CodeBssed"/>
+			<item value="D:\FrameWork\Spring\Ntsp711\MVC-Anno-10-Tiles"/>
+			<item value="D:\FrameWork\Spring\Ntsp711\MVC-Anno-6-MiniProject-All-Curd-Operation"/>
+			<item value="D:\FrameWork\Spring\Ntsp711\MVCProj-15-Anno-LayeredApp-Using-SimpleFormController2\src\main\webapp\WEB-INF\web.xml"/>
+			<item value="D:\FrameWork\Spring\Ntsp711\MappingSql-As-Sub-Class"/>
+			<item value="D:\FrameWork\Spring\Ntsp711\MVCProj-3-LayeredApp"/>
+			<item value="D:\FrameWork\Spring\Ntsp711\MVC-Proj2-WebApp"/>
+			<item value="D:\FrameWork\Spring\Ntsp711\AOP-Proj-BeforeAdvice-Auditing"/>
+			<item value="D:\FrameWork\Spring\Ntsp711\AOP-Proj-SpringAOPDecl-Around-Advice"/>
+			<item value="E:\spring program\Spring Data ORM\SpringDataFirstApp"/>
+			<item value="D:\FrameWork\Spring\Ntsp711\SpringData1App"/>
+			<item value="D:\FrameWork\Spring\Ntsp711\IOCProj16DependencyCheck2"/>
+			<item value="D:\FrameWork\Spring\Ntsp711\IOCProjBeanInheritance"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.example.Mvc_Exception_Handling_App"/>
+			<item value="com.example.Spring_Batch_1_APP"/>
+			<item value="com.example.Mvc_Proj_SpringSecurity_RailwayApp"/>
+			<item value="com.example.MVC_Anno_12_100P_Code_AbstractContextInitializer"/>
+			<item value="com.example.MVC_Anno_11"/>
+			<item value="com.example.MVC_11_100P_CodeBssed"/>
+			<item value="com.example.MVC_Anno_7_Internationalization"/>
+			<item value="com.example.MVCProj_2_Anno_LayeredApp"/>
+			<item value="com.example.MVCProj14_MultiActionController"/>
+			<item value="com.example.MVC_Anno_Proj1_WishApp"/>
+			<item value="com.example.MVCProj13_InitBinder"/>
+			<item value="com.example.MVCProj11_ReferenceData"/>
+			<item value="org.m"/>
+		</list>
+		<list key="groupId">
+			<item value="com.example"/>
+		</list>
+		<list key="artifactId">
+			<item value="Mvc-Exception-Handling-App"/>
+			<item value="Spring-Batch-1-APP"/>
+			<item value="Mvc-Proj-SpringSecurity-RailwayApp"/>
+			<item value="MVC-Anno-12-100P-Code-AbstractContextInitializer"/>
+			<item value="MVC-Anno-11"/>
+			<item value="MVC-11-100P-CodeBssed"/>
+			<item value="MVC-Anno-7-Internationalization"/>
+			<item value="MVCProj-2-Anno-LayeredApp"/>
+			<item value="MVCProj14-MultiActionController"/>
+			<item value="MVC-Anno-Proj1-WishApp"/>
+			<item value="MVCProj13-InitBinder"/>
+			<item value="MVCProj11-ReferenceData"/>
+			<item value="m"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

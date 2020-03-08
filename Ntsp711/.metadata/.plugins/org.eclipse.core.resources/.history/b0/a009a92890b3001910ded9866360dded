@@ -1,0 +1,12 @@
+package com.nt.dao;
+
+import com.nt.bo.RegistrationBO;
+
+public class RegistrationDAOImpl implements RegistrationDAO {
+
+	public int registerCustomer(RegistrationBO bo) {
+		
+		return 0;
+	}
+
+}

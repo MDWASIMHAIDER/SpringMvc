@@ -1,0 +1,2 @@
+#server managed connection pool
+spring.datasource.jndi-name=java:/comp/env/DsJndi 

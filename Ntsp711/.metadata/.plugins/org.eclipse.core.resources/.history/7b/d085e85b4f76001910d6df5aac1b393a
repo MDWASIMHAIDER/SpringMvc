@@ -1,0 +1,14 @@
+package com.nt.service;
+
+import java.util.List;
+import java.util.Map;
+
+public class StudentManagementServiceImpl implements StudentManagementService {
+
+	@Override
+	public List<Map<String, Object>> findStudByLocation(String loc) {
+		
+		return null;
+	}
+
+}

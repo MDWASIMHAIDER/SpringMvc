@@ -1,0 +1,19 @@
+package com.nt.controller;
+
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class TicketController {
+	
+	@RequestMapping("/home.htm")
+	public String showHome() {
+		return "ticketStatus";
+	}
+	
+	public String showStatus(Map<String,Object>map,@PathVariable(name=tno)) {
+		
+	}
+}

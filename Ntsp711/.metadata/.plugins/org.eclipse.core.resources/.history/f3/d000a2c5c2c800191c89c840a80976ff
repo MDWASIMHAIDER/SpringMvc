@@ -1,0 +1,20 @@
+package com.nt.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.nt.bo.LoginBO;
+
+public class LoginDAOImpl implements LoginDAO {
+	private static final String AUTHENTICATE_QUERY="SELECT COUNT(*) FROM USER_MVC WHERE UNAME=? And PASSWORD=?";
+	
+	@Autowired
+	private JdbcTemplate jt;
+	
+	@Override
+	public int authenticate(LoginBO bo) {
+		
+		return 0;
+	}
+
+}

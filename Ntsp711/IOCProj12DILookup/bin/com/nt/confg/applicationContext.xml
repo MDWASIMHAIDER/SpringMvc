@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	<bean id="eng" class="com.nt.beans.Engine"/>
+	<bean id="vechl" class="com.nt.beans.Vechile">
+		<property name="beanid" value="eng"/>
+		
+		
+		<!-- here value is eng because we want to send beanid
+		 as string value as dependent to target and here no
+		  any confirmation is done it never check that 
+		  he bean id has 
+		 any class or not it simply send it as string   -->
+		 
+		 
+		 <!-- this is another way ...this will first
+		  check weather bean id associated is class is
+		   there or not
+		  class is there or not then having that bean is 
+		 <property name="beanid">
+			<idref bean="eng"/>
+		</property> -->
+	</bean>
+
+</beans>

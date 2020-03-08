@@ -1,0 +1,6 @@
+<h1 style="color:green;text-align:center">Search Student Detail</h1>
+<form action="servleturl" method="POST">
+	Select Location:-<select name="location" multiple>
+		
+	</select>
+</form>

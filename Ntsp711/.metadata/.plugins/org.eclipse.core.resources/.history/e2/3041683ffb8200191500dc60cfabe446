@@ -1,0 +1,13 @@
+package com.nt.service;
+
+public class BankService {//target class
+	
+	public float calcIntrAmt(float principalAmt,float rate,float time) {
+		System.out.println("target class method");
+		return (principalAmt*rate*time)/100;
+	}
+	public float add(int a, int b) {
+		System.out.println("target add()");
+		return a+b;
+	}
+}

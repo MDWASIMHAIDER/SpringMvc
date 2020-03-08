@@ -1,0 +1,16 @@
+package com.nt.service;
+
+import org.springframework.stereotype.Service;
+
+import com.nt.dto.PolicyDTO;
+
+@Service("service")
+public class PolicyServiceImpl implements PolicyService {
+
+	@Override
+	public PolicyDTO findPolcyByNumber(int num) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

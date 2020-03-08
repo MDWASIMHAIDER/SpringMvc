@@ -1,0 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<p>Badi Kanjarpur Masjid Lane<br>
+State:Bihar<br>
+Pin-code:812001</p>

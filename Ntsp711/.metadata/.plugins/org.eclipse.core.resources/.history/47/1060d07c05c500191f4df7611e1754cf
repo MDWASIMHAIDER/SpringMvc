@@ -1,0 +1,13 @@
+package com.nt.dao;
+
+import com.nt.bo.LoginBO;
+
+public class LoginDAOImpl implements LoginDAO{
+
+	@Override
+	public int authenticate(LoginBO bo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.nt.HashCodeEqualsTest;
+
+public class HashCodeEqualsTest {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
+
+class Test{
+	int name;
+	public Test(int name) {
+		thisn.name=name;
+	}
+}

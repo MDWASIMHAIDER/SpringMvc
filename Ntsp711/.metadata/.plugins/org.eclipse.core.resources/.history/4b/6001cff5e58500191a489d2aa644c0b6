@@ -1,0 +1,14 @@
+package com.nt.aspect;
+
+import java.lang.reflect.Method;
+import org.springframework.aop.MethodBeforeAdvice;
+
+public class VariablePayAdvice implements MethodBeforeAdvice{
+
+	@Override
+	public void before(Method method, Object[] obj, Object target) throws Throwable {
+		
+		
+	}
+
+}

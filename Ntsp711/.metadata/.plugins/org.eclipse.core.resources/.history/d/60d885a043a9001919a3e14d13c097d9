@@ -1,0 +1,44 @@
+package com.nt.dao;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+
+import com.nt.bo.EmployeeSearchBO;
+
+public class EmployeeSearchDAOImpl implements EmployeeSearchDAO {
+	
+	private static final String EMP_INSERT_QUERY="INSERT INTO MVC_LAYERED_EMPLOYEE VALUES(?,?,?,?)";
+	
+	private JdbcTemplate jt;
+	
+	public void setJdbcTemplate(JdbcTemplate jt) {
+		this.jt=jt;
+	}
+	
+	public String insert(EmployeeSearchBO ebbo) {
+		int count=0;
+		count=jt.query(EMP_SEARCH_QUERY,new MyEmpRowMapper() ,ebbo.getEno(),ebbo.getEname(),ebbo.getDesg(),ebbo.getSalary());
+		if(count==0)
+			return "registration successfull";
+		else
+		return "problem occured";
+	}
+	public static final class MyEmpRowMapper implements RowMapper<EmployeeSearchBO>{
+
+		public EmployeeSearchBO mapRow(ResultSet rs, int rowNum) throws SQLException {
+			EmployeeSearchBO resbo=null;
+			resbo=new EmployeeSearchBO();
+			resbo.setEno(rs.getInt(1));
+			resbo.setEname(rs.getString(2));
+			resbo.setDesg(rs.getString(3));
+			resbo.setSalary(rs.getFloat(4));
+			return resbo;
+		
+	}
+
+}
+}

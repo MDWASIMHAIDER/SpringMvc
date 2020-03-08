@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-merge="true"  xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	<bean id="ecourse" class="com.nt.beans.EngCourse">
+		<property name="subject">
+			<list >
+				<value>C</value>
+				<value>Math</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="ecourse1" class="com.nt.beans.EngCourse" parent="ecourse"><!-- here class name is optional without c name also works -->
+		<property name="subject">
+			<list merge="true">
+				<value>C</value>
+				<value>C#</value>
+				<value>Java</value>
+			</list>
+		</property>
+	</bean>
+
+</beans>

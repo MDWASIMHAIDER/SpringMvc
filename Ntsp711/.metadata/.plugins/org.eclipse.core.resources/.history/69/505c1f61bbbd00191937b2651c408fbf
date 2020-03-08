@@ -1,0 +1,23 @@
+package com.nt.interceptor;
+
+import java.util.Random;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.servlet.HandlerInterceptor;
+
+@Component
+//@SessionAttributes(names="")
+public class DoublePostingInterceptor implements HandlerInterceptor {
+	 @Override
+	public boolean preHandle(HttpServletRequest req, HttpServletResponse res, Object handler)
+			throws Exception {
+		 int cToken;
+		 int sToken;
+		 req.setAttribute("cToken",new Random().nextInt(1000));
+		return HandlerInterceptor.super.preHandle(req, res, handler);
+	}
+}

@@ -1,0 +1,15 @@
+127.0.0.1 - - [03/Aug/2019:23:26:04 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [03/Aug/2019:23:26:06 +0530] "GET /MVCProj10-MiniProject/ HTTP/1.1" 200 263
+0:0:0:0:0:0:0:1 - - [03/Aug/2019:23:26:06 +0530] "GET /MVCProj10-MiniProject/images/edit1.png HTTP/1.1" 200 4459
+0:0:0:0:0:0:0:1 - - [03/Aug/2019:23:26:06 +0530] "GET /MVCProj10-MiniProject/images/report1.png HTTP/1.1" 200 6445
+0:0:0:0:0:0:0:1 - - [03/Aug/2019:23:26:06 +0530] "GET /favicon.ico HTTP/1.1" 404 1020
+0:0:0:0:0:0:0:1 - - [03/Aug/2019:23:26:09 +0530] "GET /MVCProj10-MiniProject/report.htm HTTP/1.1" 200 2676
+0:0:0:0:0:0:0:1 - - [03/Aug/2019:23:26:09 +0530] "GET /MVCProj10-MiniProject/images/delete1.png HTTP/1.1" 200 20109
+0:0:0:0:0:0:0:1 - - [03/Aug/2019:23:26:18 +0530] "GET /MVCProj10-MiniProject/insert.htm HTTP/1.1" 200 948
+0:0:0:0:0:0:0:1 - - [03/Aug/2019:23:26:50 +0530] "POST /MVCProj10-MiniProject/insert.htm HTTP/1.1" 200 3192
+0:0:0:0:0:0:0:1 - - [03/Aug/2019:23:27:08 +0530] "GET /MVCProj10-MiniProject/edit.htm?id=3001 HTTP/1.1" 200 1045
+0:0:0:0:0:0:0:1 - - [03/Aug/2019:23:31:08 +0530] "POST /MVCProj10-MiniProject/edit.htm?id=3001 HTTP/1.1" 200 3191
+0:0:0:0:0:0:0:1 - - [03/Aug/2019:23:31:24 +0530] "GET /MVCProj10-MiniProject/index.jsp HTTP/1.1" 200 263
+0:0:0:0:0:0:0:1 - - [03/Aug/2019:23:31:27 +0530] "GET /MVCProj10-MiniProject/insert.htm HTTP/1.1" 200 948
+0:0:0:0:0:0:0:1 - - [03/Aug/2019:23:31:33 +0530] "GET /MVCProj10-MiniProject/report.htm HTTP/1.1" 200 3164
+0:0:0:0:0:0:0:1 - - [03/Aug/2019:23:31:54 +0530] "GET /MVCProj10-MiniProject/index.jsp HTTP/1.1" 200 263

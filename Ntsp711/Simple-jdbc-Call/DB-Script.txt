@@ -1,0 +1,5 @@
+create or replace procedure p_get_emp_By_eid(no in number,eid out number,ename out varchar2,desg out varchar2,salary out number)
+	as begin
+		select eid,ename,desg,salary into eid,ename,desg,salary from employee_detail where eid=no;
+	end;
+/

@@ -1,0 +1,5 @@
+package com.nt.dao;
+
+public interface EmployeeDAO {
+	public List<Map<String,Object>>findEmpByNo(int no);
+}

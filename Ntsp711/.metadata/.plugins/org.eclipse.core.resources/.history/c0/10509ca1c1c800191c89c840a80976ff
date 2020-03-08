@@ -1,0 +1,6 @@
+package com.nt.bo;
+
+public class LoginBO {
+	private String uname;
+	private String password;
+}

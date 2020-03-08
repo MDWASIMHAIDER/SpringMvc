@@ -1,0 +1,22 @@
+package com.nt.dao;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.nt.bo.RegistrationBO;
+
+public class RegistrationDAOImpl implements RegistrationDAO {
+private static final String REGISTER_CUSTOMER="INSERT INTO SHADI_REGISTRATION VALUES(?,?,?,?,?,?,?,?,?,?)";
+	
+private JdbcTemplate jt;
+
+public RegistrationDAOImpl(JdbcTemplate jt) {
+	this.jt = jt;
+}
+
+public int registerCustomer(RegistrationBO bo) {
+		int count=0;
+		count=
+		return 0;
+	}
+
+}

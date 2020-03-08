@@ -1,0 +1,14 @@
+package com.nt.service;
+
+import java.util.List;
+
+import com.nt.dto.EmployeeDTO;
+
+public class EmployeeServiceImpl implements EmployeeService{
+
+	public List<EmployeeDTO> fetchAllEmployee() {
+		
+		return null;
+	}
+
+}

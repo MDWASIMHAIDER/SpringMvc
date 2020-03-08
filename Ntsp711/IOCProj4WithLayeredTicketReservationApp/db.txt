@@ -1,0 +1,14 @@
+L> desc ticket_reservation;
+ame                                      Null?    Type
+---------------------------------------- -------- ----------------------------
+ICKETNUMBER                                       NUMBER(6)
+AME                                               VARCHAR2(12)
+GE                                                NUMBER(3)
+DDRESS                                            VARCHAR2(10)
+ONTACTNO                                          NUMBER(12)
+ENDER                                             VARCHAR2(5)
+OURSE                                             VARCHAR2(10)
+ESTINATION                                        VARCHAR2(10)
+ISTANCE                                           NUMBER(5)
+
+L> insert into ticket_reservation values(ticket_seq_no.nextval,'wasim',26,'bgp',9473442689,'male','hyd','bgp',1200);

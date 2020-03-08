@@ -1,0 +1,11 @@
+package com.nt.service;
+
+import org.springframework.stereotype.Service;
+
+import com.nt.dto.PolicyDTO;
+
+@Service("dao")
+public interface PolicyService {
+	
+	public PolicyDTO getPolicyByNum(int id);
+}

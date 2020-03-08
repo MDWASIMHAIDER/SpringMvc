@@ -1,0 +1,49 @@
+package com.nt.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.nt.bo.PolicyBO;
+import com.nt.dao.PolicyDAO;
+import com.nt.dto.PolicyDTO;
+
+@Service("service")
+public class PolicyServiceImpl implements PolicyService {
+	
+	@Autowired
+	private PolicyDAO dao;
+	@Override
+	public PolicyDTO getPolicyByNum(int id) {
+		PolicyBO bo=null;
+		PolicyDTO dto=new PolicyDTO();
+		bo=dao.getPolicyById(id);
+		BeanUtils.copyProperties(bo, dto);
+		return dto;
+	}
+	@Override
+	public String PolicyInsert(PolicyDTO dto) {
+		PolicyBO bo=new PolicyBO();
+		int count=0;
+		BeanUtils.copyProperties(dto, bo);
+		count=dao.insertPolicy(bo);
+		if(count!=0) {
+			return "record inserted succesfull";
+		}
+		else {
+			return "record insertion failed";
+		}
+	}
+	@Override
+	public List<PolicyDTO> findPolicyByName(String name1, String name2, String name3) {
+		List<PolicyBO>listbo=null;
+		listbo=dao.getPolicyByName(name1, name2, name3);
+		List<PolicyDTO>listdto=new ArrayList();
+		BeanUtils.copyProperties(listbo, listdto);
+		return listdto;
+	}
+
+}

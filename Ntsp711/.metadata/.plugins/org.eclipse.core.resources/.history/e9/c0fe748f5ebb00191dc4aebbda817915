@@ -1,0 +1,6 @@
+package com.nt.command;
+
+public class EmployeeCommand {
+	private String uName;
+	private String password;
+}

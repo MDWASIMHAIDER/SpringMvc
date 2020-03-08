@@ -1,0 +1,25 @@
+package com.nt.handler;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.validation.BindException;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.AbstractCommandController;
+import org.springframework.web.servlet.mvc.SimpleFormController;
+
+import com.nt.dto.ScientistDTO;
+import com.nt.service.ScientistService;
+
+public class ScientistInputHandler extends SimpleFormController{
+	
+private ScientistService service;
+	
+	public ScientistInputHandler(ScientistService service) {
+		this.service = service;
+	}
+
+
+}

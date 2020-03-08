@@ -1,0 +1,8 @@
+package com.nt.dto;
+
+public class EmployeeDTO {
+	private int eid;
+	private String ename;
+	private String desg;
+	private float salary;
+}

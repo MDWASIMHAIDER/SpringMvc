@@ -1,0 +1,13 @@
+package com.nt.command;
+
+import lombok.Data;
+
+
+public class ScientistCommand {
+	
+	private int sno;
+	private String sname;
+	private String domain;
+	private int experiance;
+	private int patantCounts;
+}

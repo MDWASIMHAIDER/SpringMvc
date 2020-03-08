@@ -1,0 +1,13 @@
+package com.nt.command;
+
+import java.util.Date;
+
+import lombok.Data;
+
+@Data
+public class StudentCommand {
+	private String name;
+	private Date dob;
+	private Date doj;
+	private Date dom;
+}

@@ -1,0 +1,7 @@
+package com.nt.batch;
+
+import org.springframework.batch.item.ItemReader;
+
+public class CustomerItemReader implements ItemReader<T> {
+
+}

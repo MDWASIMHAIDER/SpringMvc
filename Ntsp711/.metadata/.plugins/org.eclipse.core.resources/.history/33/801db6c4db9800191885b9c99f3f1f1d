@@ -1,0 +1,28 @@
+package com.nt.confg;
+
+import javax.annotation.Resource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+//@Import(DataSource.class)
+//@ComponentScan(basePackages= {"com.nt.dao,com.nt.service"})
+import org.springframework.transaction.annotation.Transactional;
+@Configuration
+@EnableTransactionManagement
+public class AopConfig {
+	@Autowired
+	private DataSource ds;
+	@Bean("dstm")
+	public DataSourceTransactionManager createTransactionManager() {
+		DataSourceTransactionManager dstm=null;
+		new DataSourceTransactionManager(ds);
+		//dstm.setDataSource(DataSource.createDs());
+		return dstm;
+	}
+}

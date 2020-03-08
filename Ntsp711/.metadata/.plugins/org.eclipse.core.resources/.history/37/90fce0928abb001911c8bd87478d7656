@@ -1,0 +1,14 @@
+package com.nt.controller;
+
+import java.util.Map;
+
+import org.springframework.web.bind.annotation.ModelAttribute;
+
+import com.nt.command.EmployeeCommand;
+
+public class EmployeeController {
+	public String launch(Map<String,Object>map,@ModelAttribute("emcmd")EmployeeCommand command) {
+		EmployeeCommand cmd=command;
+		return "show";
+	}
+}

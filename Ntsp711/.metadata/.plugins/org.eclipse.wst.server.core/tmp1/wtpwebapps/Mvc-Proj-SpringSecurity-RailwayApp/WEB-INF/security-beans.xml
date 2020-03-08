@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.2.xsd">
+	
+	<security:http use-expressions="true">
+		<security:intercept-url pattern="/index.jsp" access="hasAnyRole('ROLE_TICKET_STATUS','ROLE_TICKET_CHECK')"/>
+		<!-- <security:intercept-url pattern="/pages/welcome.jsp" access="hasRole('ROLE_TICKET_STATUS')"/>
+		 --><security:intercept-url pattern="/pages/currentStatus.jsp" access="hasRole('ROLE_TICKET_CHECK')"/>
+		<security:form-login/>
+	</security:http>
+	
+	
+	<security:authentication-manager>
+	   	<security:authentication-provider>
+		  <!-- <security:password-encoder hash="bcrypt"/> -->
+			<security:user-service>
+				<security:user name="wasim" password="$2a$11$95D5Ai1cK7tT8sHDHdRMHOcKV3QlakT.PxA5HEFBVrJPG5cxxKGj6" authorities="ROLE_TICKET_STATUS"/>
+				<security:user name="bharat" password="{noop}bharat91" authorities="ROLE_TICKET_CHECK,ROLE_TICKET_STATUS"/>
+			</security:user-service>
+		</security:authentication-provider>
+	</security:authentication-manager>
+
+</beans>

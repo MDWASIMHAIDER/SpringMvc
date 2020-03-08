@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+	<bean id="sum" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="search.htm">handler</prop>
+				<prop key="input.htm">inputhandler</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="handler" class="com.nt.handler.ScientistHandler">
+	<property name="commandClass" value="com.nt.command.ScientistCommand"/>
+		<constructor-arg ref="sservice"/>
+	</bean>
+	
+	<!-- <bean id="inputhandler" class="com.nt.handler.ScientistInputHandler">
+		<property name="commandName" value="com.nt.command.ScientistCommand"/>
+		<constructor-arg ref="service"/>
+	</bean> -->
+	
+	<bean id="inputhandler" class="com.nt.handler.ScientistInputHandler">
+		<property name="formView" value="scientistInput"/>
+		<property name="successView" value="result"/>
+		<property name="commandClass" value="com.nt.command.ScientistCommand"/>
+		<property name="commandName" value="scmd"/>
+		<!--sessionform   -->
+		<property name="sessionForm" value="true"/>
+		<property name="service" ref="service"/>
+	</bean>
+	
+	<bean id="irvr" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/pages/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
+</beans>

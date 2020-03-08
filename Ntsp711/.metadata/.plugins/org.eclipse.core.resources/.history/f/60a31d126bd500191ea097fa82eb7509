@@ -1,0 +1,35 @@
+package com.nt.controller;
+
+import java.util.Calendar;
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class WishController {
+	
+	@RequestMapping("/home.htm")
+	public String showHome(Map<String,Object>map,Exception e) {
+		Calendar calendar=null;
+		int hour=0;
+		String msg=null;
+		calendar=Calendar.getInstance();
+		hour=calendar.get(Calendar.HOUR_OF_DAY);
+		if(hour<12) {
+			msg= "Good Morning "; 
+		}
+		else if( hour>=12 && hour<=16 ) {
+			msg= "Good AfterNoon ";
+		}
+		else if(hour<=20) {
+			msg= "Good Evening ";
+		}
+		else {
+			msg= "Good Night";
+		}
+		map.put("msg",msg);
+		return "home";
+	}
+
+}

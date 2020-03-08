@@ -1,0 +1,33 @@
+package com.example.main;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Import;
+
+import com.nt.confg.AppConfig;
+import com.nt.dto.EmployeeDTO;
+import com.nt.entity.Employee;
+import com.nt.service.EmployeeMnagmService;
+
+@SpringBootApplication
+@Import(value=AppConfig.class)
+public class SpringDataBootApp1Application {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx=null;
+		EmployeeMnagmService service=null;
+		EmployeeDTO dto=null;
+		ctx=SpringApplication.run(SpringDataBootApp1Application.class, args);
+		service=ctx.getBean("empservice",EmployeeMnagmService.class);
+		dto=new EmployeeDTO();
+		dto.setEname("bharat");
+		dto.setEmail("bharat.@gmail.com");
+		dto.setSalary(220000);
+		System.out.println("Student Registered successfully with id  "+service.registerEmp(dto));
+		System.out.println("Student detail by email "+service.findEmpByEmail("haider.@gmail.com"));
+		System.out.println("Student detail  between numbers"+service.findEmpBetweenNumbers(44, 47));
+		
+	}
+
+}

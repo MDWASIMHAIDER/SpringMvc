@@ -1,0 +1,11 @@
+package com.nt.dao;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface EmployeeDetailRepository extends CrudRepository<Employee_Detail, Long> {
+	
+		public List<Employee_Detail> searchEmpByName();
+	
+}

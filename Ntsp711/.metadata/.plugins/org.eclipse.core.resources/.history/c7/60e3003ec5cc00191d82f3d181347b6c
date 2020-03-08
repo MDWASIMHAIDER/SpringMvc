@@ -1,0 +1,24 @@
+package com.nt.controller;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+@Controller
+public class TicketController {
+	
+	@GetMapping("/home.htm")
+	public String showHome() {
+		return "ticketStatus";
+	}
+	
+	@GetMapping("/ticketStatus.htm")
+	public String showStatus(Map<String,String>map,@PathVariable("tno")Integer tno) {
+		if(tno==12072) {
+			map.put("12072","Train Delayed By 2 Hour");
+		}
+		return "ticketStatus";
+	}
+}

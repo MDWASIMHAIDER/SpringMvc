@@ -1,0 +1,23 @@
+package com.nt.batch;
+
+import org.springframework.batch.item.ItemProcessor;
+
+public class CustomerItemProcess implements ItemProcessor<String,String> {
+
+	@Override
+	public String process(String bookNameWithoutAuthor) throws Exception {
+		System.out.println("CustomerItemProcess.process()");
+		String bookNameWithAuthor="Book Name "+bookNameWithoutAuthor+" Author Name";
+		if("core java".equalsIgnoreCase(bookNameWithoutAuthor)) {
+			bookNameWithAuthor+="srinivas";
+		}
+		return null;
+	}
+
+	
+
+	
+
+	
+
+}

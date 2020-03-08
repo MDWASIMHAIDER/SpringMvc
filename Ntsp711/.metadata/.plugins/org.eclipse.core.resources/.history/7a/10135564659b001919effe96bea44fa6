@@ -1,0 +1,56 @@
+package com.nt.controller;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.nt.handler.ShowDateHandler;
+import com.nt.handler.ShowSystemInfoHandler;
+
+public class NITFrontControllerTest extends HttpServlet {
+	@Override
+	public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		Handler handle=null;
+		String target=null;
+		String lvn=null;
+		RequestDispatcher rd=null;
+		try {
+		if(req.getServletPath().equalsIgnoreCase("/systemdate.do")) {
+			System.out.println(req.getServletPath());
+			handle=new ShowDateHandler();
+			lvn=handle.handler(req, res);
+		}//if
+		else if(req.getServletPath().equalsIgnoreCase("/systeminfo.do")) {
+			handle=new ShowSystemInfoHandler();
+			lvn=handle.handler(req,res);
+		}//if
+		else {
+			target="/error.jsp";
+		}
+		}//try
+		catch(Exception e) {
+			target="/error.jsp";
+		}
+		finally {
+			if(target==null && lvn!=null) {
+				if(lvn.equalsIgnoreCase("sh_date"))
+					target="/show_date.jsp";
+			}
+			else if(lvn.equalsIgnoreCase("sh_props")) 
+				target="/show_props.jsp";
+			else {
+				target="/error.jsp";
+			}
+		}//finally
+		rd=req.getRequestDispatcher(target);
+		rd.forward(req, res);
+	}
+	@Override
+	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		doGet(req,res);
+	}
+}

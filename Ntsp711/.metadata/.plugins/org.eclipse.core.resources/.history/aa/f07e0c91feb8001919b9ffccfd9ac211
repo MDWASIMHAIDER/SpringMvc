@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" isELIgnored="false"%>
+    
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="c"%>
+    
+    <h1 style="color:blue;text-align:center">User Detail</h1>
+    <form name="frm" action="form_detail" method="POST">
+    	User-Id<input type="text" name="userId"/><br>
+    	User-Name<input type="text" name="userName"/><br>
+    	Address<input type="text" name="address"/><br>
+    	Email<input type="text" name="email"/><br>
+    	<input type="button" value="register" onclick="register()"/>
+    	<input type="button" value="modify" onclick="modify()"/>
+    	<input type="button" value="remove" onclick="remove()"/>
+    	<input type="button" value="display" onclick="display()"/>
+    </form>
+<script type="text/javascript">
+	function register(){
+		frm.action("register.htm");
+		frm.submit();
+	}
+	
+	function modify(){
+		frm.action("modify.htm");
+		frm.submit();
+	}
+	
+	function remove(){
+		frm.action("remove.htm");
+		frm.submit();
+	}
+	
+	function display(){
+		frm.action("display.htm");
+		frm.submit();
+	}
+</script>
+
+<c:if test="${!empty operation}">
+	<b>${operation } </b>  is performed. <br>
+</c:if>
+<c:if test="${!empty data}">
+	<h5>${data}</h5>
+</c:if>

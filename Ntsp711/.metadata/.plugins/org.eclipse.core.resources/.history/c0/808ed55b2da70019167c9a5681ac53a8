@@ -1,0 +1,14 @@
+package com.nt.service;
+
+import java.util.List;
+
+import com.nt.dto.PatientResultDTO;
+
+public class PatientServiceImpl implements PatientService {
+
+	public List<PatientResultDTO> getAllDetail(PatientResultDTO dto) {
+		
+		return null;
+	}
+
+}

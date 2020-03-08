@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+
+<!-- using static factory method
+	String s1=new String("hello")
+	String s2=s1.concat("123");
+ -->
+<bean id="c1" class="java.lang.Class" factory-method="forName">
+	<constructor-arg value="java.util.Date"/>
+	</bean>
+	<bean id="c2" class="java.util.Calendar" factory-method="getInstance"/>
+	
+	<!-- using instance factory method -->
+	<bean id="s1" class="java.lang.String">
+		<constructor-arg value="hello"/>
+	</bean>
+	<bean id="s2" factory-bean="s1" factory-method="concat">
+		<constructor-arg value=" how are you"/>
+	</bean>
+	<!-- 
+	Stringbuffer sb=new StringBuffer("hello how are you");
+	s3=sb.substring(2,10); -->
+	<bean id="sb" class="java.lang.StringBuffer">
+		<constructor-arg value="hello how are you?"/>
+	</bean>
+	<bean id="s3" factory-bean="sb" factory-method="substring">
+	<constructor-arg value="2"/>
+	<constructor-arg value="10"/>
+	</bean>
+</beans>

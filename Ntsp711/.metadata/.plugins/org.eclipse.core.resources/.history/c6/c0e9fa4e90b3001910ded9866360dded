@@ -1,0 +1,12 @@
+package com.nt.dao;
+
+import com.nt.bo.RegistrationBO;
+
+public class RegistrationDAOImpl implements RegistrationDAO {
+private static final String REGISTER_CUSTOMER="INSERT INTO SHADI_REGISTRATION VALUES(?,?,?,?,?,?,?,?,?,?)";
+	public int registerCustomer(RegistrationBO bo) {
+		
+		return 0;
+	}
+
+}

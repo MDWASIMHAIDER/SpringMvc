@@ -1,0 +1,36 @@
+package com.nt.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.nt.service.UniversityManagementService;
+
+public class MainController extends HttpServlet {
+		ApplicationContext ctx;
+		UniversityManagementService service;
+		@Override
+		public void init() throws ServletException {
+				ctx=new ClassPathXmlApplicationContext("com/nt/confg/applicationContext.xml");
+				service=ctx.getBean("service",UniversityManagementService.class);
+		}
+		@Override
+		public  void doGet(HttpServletRequest req,
+													HttpServletResponse res) throws
+																ServletException, IOException {
+					
+						
+		}
+		@Override
+		public void doPost(HttpServletRequest req,
+													HttpServletResponse res) throws
+																ServletException, IOException {
+				doGet(req, res);
+		}
+}

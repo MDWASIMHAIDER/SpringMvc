@@ -1,0 +1,9 @@
+package com.nt.dao;
+
+import java.util.List;
+
+import com.nt.bo.EmployeeSearchBO;
+
+public interface EmployeeSearchDAO{
+	public List<EmployeeSearchBO> search(EmployeeSearchBO ebbo);
+}

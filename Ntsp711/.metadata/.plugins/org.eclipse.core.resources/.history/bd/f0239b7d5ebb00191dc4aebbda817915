@@ -1,0 +1,6 @@
+package com.nt.bo;
+
+public class EmployeeBO {
+	private String uName;
+	private String password;
+}

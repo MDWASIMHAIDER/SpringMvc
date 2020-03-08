@@ -1,0 +1,19 @@
+package com.nt.controller;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.nt.service.UniversityManagementService;
+
+public class MainController extends HttpServlet {
+		ApplicationContext ctx;
+		UniversityManagementService service;
+		@Override
+		public void init() throws ServletException {
+				ctx=new ClassPathXmlApplicationContext("com/nt/confg/applicationContext.xml");
+				service=ctx.getBean("service",UniversityManagementService.class);
+		}
+}

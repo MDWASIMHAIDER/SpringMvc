@@ -1,0 +1,15 @@
+package com.nt.dao;
+
+import org.springframework.stereotype.Repository;
+
+import com.nt.bo.EmployeeBO;
+
+@Repository("repo")
+public class EMployeeDAOImpl implements EmployeeDAO {
+
+	public int insertEmp(EmployeeBO bo) {
+		
+		return 0;
+	}
+
+}

@@ -1,0 +1,44 @@
+package com.nt.controller;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class FrontControllerServlet extends HttpServlet{
+
+	@Override
+	public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		Handler handler=null;
+		String lvn=null;
+		String target=null;
+		RequestDispatcher rd=null;
+		try {
+			//getServletPath gives the last text of req like systemdate.do
+			if(req.getServletPath().equalsIgnoreCase("/SystemDate.do")) {
+				handler=new ShowDateHandler();
+				lvn=handler.handle(req, res);
+			}
+			else if(req.getServletPath().equalsIgnoreCase("SystemInfo.do")) {
+				handler=new ShowSystemInfoHandler();
+				lvn=handler.handle(req, res);
+			}
+			else {
+				target="/error.jsp";
+			}
+		}//try
+		catch(Exception e) {
+			e.printStackTrace();
+			target="/error.jsp";
+		}
+	}
+
+	@Override
+	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		doGet(req,res);
+	}
+	
+}

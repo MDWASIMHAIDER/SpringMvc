@@ -1,0 +1,32 @@
+package com.nt.dao;
+
+import java.util.List;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.nt.bo.PatientSearchBO;
+import com.nt.dto.PatientResultDTO;
+
+public class PatientResultDAO  implements PatientSearchDAO{
+
+	private static final String GET_PATIENT_RECORD="SELECT PID,PNAME,PDEPT,ADDRESS,TSTATUS,TBILL FROM MVC_PATIENT"
+														+("WHERE PID IS NOT NULL AND PID=?")
+														+("OR PNAME IS NOT NULL AND PNAME=?")
+														+("OR PDEPT IS NOT NULL AND PDEPT=?")
+														+("OR ADDRESS IS NOT NULL AND ADDRESS=?")
+														+("OR TSTATUS IS NOT NULL AND TSTATUS=?")
+														+("OR TBILL IS NOT NULL AND TBILL=?");
+	private JdbcTemplate jt;
+
+	public PatientResultDAO(JdbcTemplate jt) {
+		this.jt = jt;
+	}
+
+	public List<PatientResultDTO> getPatientRecord(PatientSearchBO bo) {
+		PatientResultDTO dto=null;
+		List<PatientResultDTO> listdto=null;
+		listdto=jt.execute()
+		return null;
+	}
+
+}

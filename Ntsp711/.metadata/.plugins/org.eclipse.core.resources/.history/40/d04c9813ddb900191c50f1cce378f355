@@ -1,0 +1,20 @@
+package com.nt.controller;
+
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.nt.service.EmployeeSearchService;
+
+public class EmployeeSearchController {
+	@Autowired
+	private EmployeeSearchService service;
+	
+	@RequestMapping("/response.htm")
+	public String processEmp(Map<String,Object>map) {
+		String res=null;
+		res=service.searchEmp();
+		return "response";
+	}
+}

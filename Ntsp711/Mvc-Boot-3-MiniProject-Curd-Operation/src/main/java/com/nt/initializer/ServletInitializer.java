@@ -1,0 +1,24 @@
+package com.nt.initializer;
+
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.Import;
+
+import com.example.main.MvcBoot3MiniProjectCurdOperationApplication;
+import com.nt.config.MvcWebAppConfig;
+import com.nt.config.RootAppConfig;
+
+@Import({RootAppConfig.class,MvcWebAppConfig.class})
+public class ServletInitializer extends SpringBootServletInitializer {
+
+	
+/*	public ServletInitializer() {
+		 setRegisterErrorPageFilter(false);
+	}*/
+
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(MvcBoot3MiniProjectCurdOperationApplication.class);
+	}
+
+}

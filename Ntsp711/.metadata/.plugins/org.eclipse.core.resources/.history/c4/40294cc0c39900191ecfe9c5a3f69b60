@@ -1,0 +1,11 @@
+package com.nt.service;
+
+import com.nt.dao.DepositeDAO;
+import com.nt.dao.WithdrawDAO;
+
+public class AccountService {
+	private DepositeDAO  depodao;
+	private WithdrawDAO withdao;
+	
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MVCProj11-ReferenceData&apos; to &apos;MVCProj11-AbstractWizardFormController&apos;" description="Rename resource &apos;MVCProj11-ReferenceData&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/MVCProj11-ReferenceData" name="MVCProj11-AbstractWizardFormController" stamp="1564645298184" updateReferences="true"/>
+</session>

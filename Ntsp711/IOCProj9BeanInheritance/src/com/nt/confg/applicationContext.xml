@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="basebike" class="com.nt.beans.Bike" abstract="true">
+		<property name="engineCC" value="150cc"/>
+		<property name="make" value="bajaj"/>
+	</bean>
+	
+	<bean id="bk" class="com.nt.beans.Bike" parent="basebike">
+		<property name="id" value="BR201810M"/>
+		<!-- <property name="engineCC" value="150cc"/>
+		<property name="make" value="bajaj"/> -->
+		<property name="make" value="honda"/>
+	</bean>
+	<bean id="bk1" class="com.nt.beans.Bike" parent="basebike">
+		<property name="id" value="DL201810M"/>
+		<!-- <property name="engineCC" value="150cc"/>
+		<property name="make" value="bajaj"/> -->
+	</bean>
+
+</beans>

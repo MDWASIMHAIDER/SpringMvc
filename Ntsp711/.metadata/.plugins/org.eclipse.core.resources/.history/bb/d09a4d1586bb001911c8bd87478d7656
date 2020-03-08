@@ -1,0 +1,13 @@
+package com.nt.service;
+
+import com.nt.dto.EmployeeDTO;
+
+public class EmployeeServiceImpl implements EmployeeSrvice {
+
+	@Override
+	public String Authenticate(EmployeeDTO dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

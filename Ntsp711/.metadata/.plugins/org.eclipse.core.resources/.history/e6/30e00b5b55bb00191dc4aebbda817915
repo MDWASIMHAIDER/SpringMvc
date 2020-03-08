@@ -1,0 +1,58 @@
+package com.nt.controller;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.nt.command.EmployeeSearchCommand;
+import com.nt.dto.EmployeeSearchDTO;
+import com.nt.service.EmployeeSearchService;
+
+@Controller
+public class EmployeeSearchController {
+	@Autowired
+	private EmployeeSearchService service;
+	
+	
+
+	
+	@RequestMapping("/home.htm")
+	public String view() {
+		return "welcome";
+	}
+	
+	@RequestMapping("/response.htm")
+	public String processEmp(Map<String,Object>map) {
+		String res=null;
+		List<EmployeeSearchDTO>listdto=null;
+		listdto=service.searchEmp();
+		map.put("listdto",listdto);
+		return "response";
+	}
+	
+	@RequestMapping("/insert.htm")
+	public String launchForm(Map<String, Object>map,EmployeeSearchCommand cmd) {
+		return "insert_form";
+	}
+	
+	@RequestMapping("/result.htm")
+	public String savingEmp(Map<String,Object>map,@ModelAttribute("empcmd")EmployeeSearchCommand cmd) {
+			EmployeeSearchDTO dto=null;
+			dto=new EmployeeSearchDTO();
+			dto.setEname(cmd.getEname());
+			dto.setDesg(cmd.getDesg());
+			dto.setDeptno(cmd.getDeptno());
+			dto.setSalary(cmd.getSalary());
+			dto.setMgrno(cmd.getMgrno());
+			System.out.println(cmd.getSalary());
+			String resMsg=null;
+			resMsg=service.saveEmp(dto);
+			System.out.println(resMsg);
+			map.put("resMsg", resMsg);
+			return "insert_form";
+	}
+}

@@ -1,0 +1,8 @@
+package com.nt.service;
+
+import com.nt.dto.EmployeeDTO;
+
+public interface EmployeeMnagmService {
+	public int registerEmp(EmployeeDTO dto);
+	public List<Employee> findEmpByEmail(String email);
+}

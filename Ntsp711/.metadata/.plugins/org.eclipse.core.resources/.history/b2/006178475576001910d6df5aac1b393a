@@ -1,0 +1,22 @@
+package com.nt.service;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.stereotype.Service;
+
+@Service("service")
+public class StudentManagementServiceImpl implements StudentManagementService {
+
+	StudentManagementService service=null;
+	@Override
+	public List<Map<String, Object>> findStudByLocation(String... loc) {
+		List<Map<String,Object>>listdetail=null;
+		String cond=null;
+		StringBuffer sb=null;
+		sb=new StringBuffer();
+		sb.append("('");
+		return null;
+	}
+
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:batch="http://www.springframework.org/schema/batch"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/batch http://www.springframework.org/schema/batch/spring-batch-3.0.xsd">
+
+		<import resource="applicationContext.xml"/>
+		<bean id="customerReader" class="com.nt.batch.CustomerItemReader">
+			<property name="bookNameList">
+				<list>
+					<value>Core Java</value>
+					<value>Spring</value>
+					<value>Design Pattern</value>
+					<value>Hibernate</value>
+				</list>
+			</property>
+		</bean>
+		
+		<bean id="customerProcessor" class="com.nt.batch.CustomerItemProcess"/>
+		
+		<bean id="customerWriter" class="com.nt.batch.CustomerItemWriter"/>
+		
+		<batch:job id="job1" job-repository="jobRep" parent="sjob">
+			<batch:step id="step1">
+				<batch:tasklet transaction-manager="txmgr">
+					<batch:chunk reader="customerReader" processor="customerProcessor" writer="customerWriter" commit-interval="1"/>
+				</batch:tasklet>
+			</batch:step>
+		</batch:job>
+</beans>

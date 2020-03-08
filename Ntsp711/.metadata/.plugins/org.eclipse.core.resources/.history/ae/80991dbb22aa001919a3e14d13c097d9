@@ -1,0 +1,5 @@
+ename.required=student name cant be empty
+desg.required=desg cant be empty
+salary.requred=salary cant be empty
+deptno.required=dept number cant be empty
+mgrno.required=mgrno cant be empty

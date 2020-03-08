@@ -1,0 +1,6 @@
+package com.nt.aspect;
+
+
+public class VariablePayAdvice implements MethodBeforeAdvices{
+
+}

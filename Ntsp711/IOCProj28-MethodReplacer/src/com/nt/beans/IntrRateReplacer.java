@@ -1,0 +1,43 @@
+package com.nt.beans;
+
+import java.lang.reflect.Method;
+
+import org.springframework.beans.factory.support.MethodReplacer;
+
+public class IntrRateReplacer implements MethodReplacer {
+
+	private float rate;
+	public void setRate(float rate) {
+		this.rate = rate;
+	}
+
+	/*public IntrRateReplacer() {
+		System.out.println("intrest rate 0-param constructor");
+	}*/
+
+	@Override
+	public Object reimplement(Object bean, Method method, Object[] args) throws Throwable {
+	//	System.out.println("IntrRateReplacer.reimplement()");
+		System.out.println("bean class-->"+bean.getClass());
+		System.out.println("method name-->"+method.getName());
+		if(method.getName().equals("calcIntrAmt")) {
+			float pamt=(float)args[0];
+			float time=(float)args[1];
+			System.out.println("calcinamt ===>"+pamt*time*rate/100.0f);
+			return pamt*time*rate/100.0f;
+			
+		}
+		/*else {
+			return 0.0f;
+		}*/
+		else if(method.getName().equals("test")) {
+		    String s=(String)args[0];
+			//System.out.println("test block"+s);
+			return s+"wasim";
+		}
+		else {
+			return 0.0f;
+		}
+	}
+
+}

@@ -1,0 +1,4 @@
+127.0.0.1 - - [21/Jul/2019:19:40:50 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [21/Jul/2019:19:40:50 +0530] "GET /MVCProj-4-LayeredApp-Using-AbstractCommandController/ HTTP/1.1" 200 868
+0:0:0:0:0:0:0:1 - - [21/Jul/2019:19:40:51 +0530] "GET /favicon.ico HTTP/1.1" 404 1020
+0:0:0:0:0:0:0:1 - - [21/Jul/2019:19:40:54 +0530] "POST /MVCProj-4-LayeredApp-Using-AbstractCommandController/;jsessionid=4D53F09DE82F3793EF17C7A8B2AC9B89 HTTP/1.1" 200 1106

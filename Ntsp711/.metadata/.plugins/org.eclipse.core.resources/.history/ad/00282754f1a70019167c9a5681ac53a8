@@ -1,0 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+
+    <h1 style="color:green;text-align:center">Search Patient</h1>
+    <form action="search" method="Post">
+    	private int  pid;
+	private String pname;
+	private String pdept;
+	private String address;
+	Patient-Id:-<input type="text" value="pid"/>
+    </form>

@@ -1,0 +1,21 @@
+SQL> CREATE TABLE STUDENT_DETAILS(SNO NUMBER(5),SNAME VARCHAR2(15),SADD VARCHAR2(1
+ER(3),RESULT VARCHAR2(6));
+
+Table created.
+
+SQL> INSERT INTO STUDENT_DETAILS VALUES(101,'MD WASIM','BHGALPUR',250,85,PASS);
+INSERT INTO STUDENT_DETAILS VALUES(101,'MD WASIM','BHGALPUR',250,85,PASS)
+                                                                    *
+ERROR at line 1:
+ORA-00984: column not allowed here
+
+
+SQL> INSERT INTO STUDENT_DETAILS VALUES(101,'MD WASIM','BHGALPUR',250,85,'PASS');
+
+1 row created.
+
+SQL> SELECT *FROM STUDENT_DETAILS;
+
+       SNO SNAME           SADD                 TOTAL        AVG RESULT
+---------- --------------- --------------- ---------- ---------- ------
+       101 MD WASIM        BHGALPUR               250         85 PASS

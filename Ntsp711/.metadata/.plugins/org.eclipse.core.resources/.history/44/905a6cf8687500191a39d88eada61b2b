@@ -1,0 +1,13 @@
+package com.nt.service;
+
+import com.nt.dao.Employee_Detail;
+
+public class EmployeeServiceImpl implements EmployeeService {
+
+	@Override
+	public String registerEmp(Employee_Detail ed) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

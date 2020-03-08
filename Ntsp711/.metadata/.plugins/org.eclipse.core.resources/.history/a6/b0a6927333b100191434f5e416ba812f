@@ -1,0 +1,36 @@
+package com.nt.dao;
+
+import java.util.List;
+
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.ResultSetExtractor;
+import org.springframework.jdbc.core.RowMapperResultSetExtractor;
+
+import com.nt.bo.ScientistBO;
+
+public class ScientistDAOImpl implements ScientistDAO {
+	private static final String GET_ALL_SCIENTIST="SELECT ID,NAME,DOMAIN,EXPERIANCE,PATENTSCOUNT  FROM INDIAN_SCIENTIST";
+	private static final String DELETE_SCIENTIST="DELETE ID,NAME,DOMAIN,EXPERIANCE,PATENTSCOUNT FROM INDIAN_SCIENTIST WHERE ID=?";
+	private JdbcTemplate jt;
+	
+	public ScientistDAOImpl(JdbcTemplate jt) {
+		this.jt = jt;
+	}
+
+	public List<ScientistBO> getAllScientist() {
+		List<ScientistBO>listbo=null;
+		BeanPropertyRowMapper<ScientistBO>rowMapper=null;
+		rowMapper=new BeanPropertyRowMapper<ScientistBO>(ScientistBO.class);
+		listbo=jt.query(GET_ALL_SCIENTIST, new RowMapperResultSetExtractor<ScientistBO>(rowMapper));
+		return listbo;
+	}
+
+	@Override
+	public int deleteScientist(int id) {
+		int count=0;
+		count=jt.update(DELETE_SCIENTIST,id);
+		return count;
+	}
+
+}

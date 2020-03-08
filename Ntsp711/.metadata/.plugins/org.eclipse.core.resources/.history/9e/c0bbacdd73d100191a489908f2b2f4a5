@@ -1,0 +1,3 @@
+//com.springsource.sts.config.flow.coordinates\:http\://www.springframework.org/schema/batch\:/Spring-Batch-1-APP/src/main/java/com/nt/confg/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<graph/>
+//com.springsource.sts.config.flow.coordinates\:http\://www.springframework.org/schema/batch\:/Spring-Batch-1-APP/src/main/java/com/nt/confg/simple-job.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<graph/>
+eclipse.preferences.version=1

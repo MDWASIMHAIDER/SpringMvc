@@ -1,0 +1,18 @@
+package com.nt.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.nt.service.BankService;
+
+public class ClientApp {
+
+	public static void main(String[] args) throws IllegalAccessException {
+		ApplicationContext ctx=null;
+		ctx=new ClassPathXmlApplicationContext("com/nt/confg/applicationContext.xml");
+		BankService service=null;
+		service=ctx.getBean("service",BankService.class);
+		System.out.println(service.transferMoney(1001, 1004, 2000));
+	}
+
+}

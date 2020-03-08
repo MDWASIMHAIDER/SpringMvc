@@ -1,0 +1,19 @@
+package com.nt.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.nt.service.WishService;
+
+@Controller("wishController")
+public class WishController {
+	@Autowired
+	private WishService service;
+	
+	public ModelAndView process() {
+		String wishMsg=null;
+		wishMsg=service.getTimeDetail();
+		return new ModelAndView("result","wishMsg",wishMsg);
+	}
+}

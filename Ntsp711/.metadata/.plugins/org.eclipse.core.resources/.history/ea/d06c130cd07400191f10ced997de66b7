@@ -1,0 +1,57 @@
+package com.nt.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.nt.dao.EmployeeDAO;
+import com.nt.dto.EmployeeDTO;
+import com.nt.entity.Employee;
+
+
+@Service("empservice")
+public class EmployeeMnagmServiceImpl implements EmployeeMnagmService {
+	
+	@Autowired
+	private EmployeeDAO dao;
+	@Override
+	public int registerEmp(EmployeeDTO dto) {
+		Employee emp=null;
+		//convert dto to entity
+		emp=new Employee();
+		BeanUtils.copyProperties(dto, emp);
+		emp=dao.save(emp);
+		return emp.getEid();
+	}
+	@Override
+	public List<EmployeeDTO> findEmpByEmail(String email) {
+		List<Employee> listemps=null;
+		List<EmployeeDTO>listdto=new ArrayList();
+		listemps=(List<Employee>)dao.findByEmail(email);
+		listemps.forEach(emp->{
+			EmployeeDTO dto=new EmployeeDTO();
+			BeanUtils.copyProperties(emp, dto);
+			listdto.add(dto);
+		});
+		return listdto;
+	}
+	@Override
+	public List<EmployeeDTO> findEmpBetweenNumbers(int start, int end) {
+		List<EmployeeDTO> listdto=new ArrayList();
+		List<Employee> listemp=null;
+		listemp=(List<Employee>)dao.findBetweenByEnos(start, end);
+		listemp.forEach(emp->{
+			EmployeeDTO dto=new EmployeeDTO();
+			BeanUtils.copyProperties(emp, dto);
+			listdto.add(dto);
+		});
+		return listdto;
+	}
+	
+	
+	
+
+}

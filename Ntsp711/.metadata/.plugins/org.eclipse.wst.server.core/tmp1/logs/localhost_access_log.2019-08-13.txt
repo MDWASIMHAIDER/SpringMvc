@@ -1,0 +1,15 @@
+127.0.0.1 - - [13/Aug/2019:22:47:25 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:22:47:27 +0530] "GET /MVC-Anno-5-Layered-LoginApp-On-SimpleFormController-DoublePosting/ HTTP/1.1" 200 342
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:22:47:40 +0530] "POST /MVC-Anno-5-Layered-LoginApp-On-SimpleFormController-DoublePosting/show.htm HTTP/1.1" 200 379
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:22:47:45 +0530] "POST /MVC-Anno-5-Layered-LoginApp-On-SimpleFormController-DoublePosting/show.htm HTTP/1.1" 200 42
+127.0.0.1 - - [13/Aug/2019:22:56:48 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:22:56:49 +0530] "GET /MVC-Anno-5-Layered-LoginApp-On-SimpleFormController-DoublePosting/ HTTP/1.1" 200 342
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:22:56:53 +0530] "POST /MVC-Anno-5-Layered-LoginApp-On-SimpleFormController-DoublePosting/show.htm HTTP/1.1" 200 419
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:22:56:58 +0530] "POST /MVC-Anno-5-Layered-LoginApp-On-SimpleFormController-DoublePosting/show.htm HTTP/1.1" 200 404
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:22:57:02 +0530] "POST /MVC-Anno-5-Layered-LoginApp-On-SimpleFormController-DoublePosting/show.htm HTTP/1.1" 200 379
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:22:57:06 +0530] "POST /MVC-Anno-5-Layered-LoginApp-On-SimpleFormController-DoublePosting/show.htm HTTP/1.1" 200 42
+127.0.0.1 - - [13/Aug/2019:23:59:04 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:23:59:05 +0530] "GET /MVC-Anno-5-Layered-LoginApp-On-SimpleFormController-DoublePosting/ HTTP/1.1" 200 342
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:23:59:09 +0530] "POST /MVC-Anno-5-Layered-LoginApp-On-SimpleFormController-DoublePosting/show.htm HTTP/1.1" 200 404
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:23:59:12 +0530] "POST /MVC-Anno-5-Layered-LoginApp-On-SimpleFormController-DoublePosting/show.htm HTTP/1.1" 200 379
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:23:59:17 +0530] "POST /MVC-Anno-5-Layered-LoginApp-On-SimpleFormController-DoublePosting/show.htm HTTP/1.1" 200 62

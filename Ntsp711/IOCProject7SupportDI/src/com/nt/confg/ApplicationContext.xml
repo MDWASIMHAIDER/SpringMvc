@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	<bean id="stu" class="com.nt.beans.Student">
+		<property name="marks">
+			<list>
+				<value>79</value>
+			</list>
+		</property>
+		<property name="name">
+			<list>
+				<value>wasim</value>
+				<value>wasim</value>
+				<value>wasim</value>
+			</list>
+		</property>
+		<property name="date" ref="dt"/>
+		<property name="userName">
+			<map>
+				<entry>
+					<key><value>userName</value></key>
+					<value>wasim@91</value>
+				</entry>
+			</map>
+		</property>
+		<property name="password">
+			<map>
+			<entry key="password" value="wasim123"/>
+			</map>
+		</property>
+	</bean>
+	<bean id="dt" class="java.util.Date">
+		<property name="date" value="13"/>
+		<property name="month" value="3"/>
+		<property name="year">
+			<value>90</value>
+		</property>
+	</bean>
+			<bean id="usr" class="com.nt.beans.User">
+			<!-- <constructor-arg value="mca" index="1"/>
+			<constructor-arg><null/></constructor-arg> -->
+			<property name="phoneNummber">
+				<set>
+				<value>9473442690</value>
+				<value>9473442690</value>
+				<value>9473442690</value>
+				<value>9473442690</value>
+				</set>
+			</property>
+			<property name="userDetail">
+			<props>
+				<prop key="wasim">bhgalpur</prop>
+				<prop key="bhagwati">bhgalpur</prop>
+				<prop key="wasim">bhgalpur</prop>
+				</props>
+			</property>
+			<property name="dat" ref="dt"/>
+			<property name="address">
+				<array>
+					<value>bgp</value>
+					<value>jkh</value>
+					<value>ptn</value>
+				</array>
+			</property>
+		</bean>	
+		<bean id="clg" class="com.nt.beans.College">
+			<constructor-arg value="tmbu"/>
+			<constructor-arg><null/></constructor-arg>
+		</bean>
+</beans>

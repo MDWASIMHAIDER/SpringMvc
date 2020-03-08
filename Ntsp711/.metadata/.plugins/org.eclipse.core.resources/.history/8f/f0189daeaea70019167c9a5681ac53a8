@@ -1,0 +1,39 @@
+package com.nt.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.nt.bo.PatientResultBO;
+import com.nt.bo.PatientSearchBO;
+import com.nt.dao.PatientSearchDAO;
+import com.nt.dto.PatientResultDTO;
+
+public class PatientServiceImpl implements PatientService {
+	private PatientSearchDAO dao;
+	
+	public PatientSearchDAO getDao() {
+		return dao;
+	}
+	public void setDao(PatientSearchDAO dao) {
+		this.dao = dao;
+	}
+
+	public List<PatientResultDTO> getAllDetail(PatientResultDTO dto) {
+		PatientSearchBO bo=null;
+		bo=new  PatientSearchBO();
+		bo.setPid(dto.getPid());
+		bo.setPname(dto.getPname());
+		bo.setPdept(dto.getPdept());
+		List<PatientResultBO>lbo=dao.getPatientRecord(bo);
+		lbo.forEach(lb->{
+			PatientResultDTO rdto=new PatientResultDTO();
+			rdto.setPid(lb.getPid());
+			rdto.setPname(lb.getPname());
+			rdto.setPdept(lb.getPdept());
+			rdto.setAddress(lb.getAddress());
+			rdto.getTstatus(lb.getTstatus());
+		});
+		return null;
+	}
+
+}

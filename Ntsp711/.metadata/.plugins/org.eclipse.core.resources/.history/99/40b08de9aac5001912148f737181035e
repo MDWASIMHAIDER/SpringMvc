@@ -1,0 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1" isErrorPage="false" %>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+
+<h1>Login Form</h1>
+
+<form:form action="loginresult" method="POST" modelAttribute="logincmd">
+	User Name:<form:input path="uname"/><br>
+</form:form>

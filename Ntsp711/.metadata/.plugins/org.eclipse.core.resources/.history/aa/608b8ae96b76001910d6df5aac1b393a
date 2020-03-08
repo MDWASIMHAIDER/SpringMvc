@@ -1,0 +1,10 @@
+<h1 style="color:green;text-align:center">Search Student Detail</h1>
+<form action="servleturl" method="POST">
+	Select Location:-<select name="location" multiple>
+		<option value="mumbai">Mumbai</option>
+		<option value="mumbai">Delhi</option>
+		<option value="mumbai">Rajasthan</option>
+		<option value="mumbai">Bihar</option>
+		<option value="mumbai">Kolkata</option>
+	</select>
+</form>

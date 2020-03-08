@@ -1,0 +1,16 @@
+package com.nt.handler;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.nt.controller.Handler;
+
+public class ShowDateHandler implements Handler {
+
+	@Override
+	public String handle(HttpServletRequest req, HttpServletResponse res) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" isELIgnored="false"%>
+
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<table>
+	<form:form method="POST" commandName="scmd">
+		<tr><td>Student Name:</td><td><form:input path="name"/></td></tr>
+		<tr><td>Date of Birth:</td><td><form:input path="dob"/></td></tr>
+		<tr><td>Date of joining:</td><td><form:input path="doj"/></td></tr>
+		<tr><td>Date of Marriage:</td><td><form:input path="dom"/></td></tr>
+		<tr><td><input type="submit" value="Register"/></td></tr>
+	</form:form>
+</table>
+<h1>${scmd}</h1>

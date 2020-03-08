@@ -1,0 +1,11 @@
+package com.nt.bo;
+
+import lombok.Data;
+
+@Data
+public class EmployeeBO {
+	private int eno;
+	private String ename;
+	private String add;
+	private int salary;
+}

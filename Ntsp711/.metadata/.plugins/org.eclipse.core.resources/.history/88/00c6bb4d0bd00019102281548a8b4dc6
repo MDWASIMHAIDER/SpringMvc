@@ -1,0 +1,23 @@
+package com.nt.batch;
+
+import org.springframework.batch.item.ItemProcessor;
+
+public class CustomerItemProcess implements ItemProcessor<I, O> {
+
+	@Override
+	public String process(String bookNameWithoutAuthor) throws Exception {
+		
+		return null;
+	}
+
+	@Override
+	public Object process(String item) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+	
+
+}

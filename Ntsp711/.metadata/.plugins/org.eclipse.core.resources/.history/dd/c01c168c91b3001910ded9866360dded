@@ -1,0 +1,18 @@
+package com.nt.service;
+
+import javax.imageio.spi.RegisterableService;
+import javax.imageio.spi.ServiceRegistry;
+
+public class RegistrationServiceImpl implements RegisterableService {
+
+	public void onRegistration(ServiceRegistry registry, Class<?> category) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void onDeregistration(ServiceRegistry registry, Class<?> category) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

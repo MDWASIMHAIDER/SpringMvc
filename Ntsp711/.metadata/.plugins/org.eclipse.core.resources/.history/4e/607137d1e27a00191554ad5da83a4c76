@@ -1,0 +1,37 @@
+package com.nt.dao;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.stereotype.Repository;
+
+import com.nt.bo.PolicyBO;
+
+@Repository("dao")
+public class PolicyDAOImpl implements PolicyDAO {
+	
+	private static final String GET_POLICY_DETAIL="SELECT POLICYID,POLICYNAME,TENURE,COMPANY,INITIALAMOUNT FROM INSURANCE_DETAIL WHERE POLICYID=:POLICYID";
+	@Autowired
+	private NamedParameterJdbcTemplate jt;
+	public PolicyBO getPolicyById(int id) {
+		PolicyBO bo=null;
+		Map<String,Object>params=null;
+		params=new HashMap();
+		params.put("pid", id);
+		bo=jt.queryForObject(GET_POLICY_DETAIL,  params, (rs,index)->{
+			PolicyBO bo1=new PolicyBO();
+			bo1.setPolicyId(rs.getInt(1));
+			bo1.setPolicyName(rs.getString(2));
+			bo1.setTenure(rs.getInt(3));
+			bo1.setCompany(rs.getString(4));
+			bo1.setInitialAmount(rs.getInt(5));
+			return bo1;
+		});
+		System.out.println(bo);
+		return bo;
+	}
+
+}

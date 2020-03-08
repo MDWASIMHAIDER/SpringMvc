@@ -1,0 +1,5 @@
+127.0.0.1 - - [18/Aug/2019:17:41:10 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [18/Aug/2019:17:41:11 +0530] "GET /MVC-Anno-8-FileUploading/ HTTP/1.1" 200 286
+0:0:0:0:0:0:0:1 - - [18/Aug/2019:17:41:11 +0530] "GET /favicon.ico HTTP/1.1" 404 1020
+0:0:0:0:0:0:0:1 - - [18/Aug/2019:17:41:29 +0530] "POST /MVC-Anno-8-FileUploading/upload.htm HTTP/1.1" 200 205
+0:0:0:0:0:0:0:1 - - [18/Aug/2019:17:41:34 +0530] "GET /MVC-Anno-8-FileUploading/home.htm HTTP/1.1" 200 286

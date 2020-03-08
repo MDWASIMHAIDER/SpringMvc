@@ -1,0 +1,11 @@
+package com.nt.service;
+
+public class EmployeeSearchServiceImpl implements EmployeeSearchService {
+
+	@Override
+	public String searchEmp() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

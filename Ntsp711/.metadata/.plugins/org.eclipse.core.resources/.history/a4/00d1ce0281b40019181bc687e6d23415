@@ -1,0 +1,21 @@
+package com.nt.test;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class TestingQuestion {
+
+	public static void main(String[] args) {
+
+		List list=new ArrayList();
+		list.add("wasim");
+		list.add(12);
+		list.add(12);
+		List list1=new ArrayList(new HashSet(list));
+		System.out.println(list1);
+
+	}
+
+}

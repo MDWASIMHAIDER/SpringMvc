@@ -1,0 +1,38 @@
+package com.nt.controller;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.nt.handler.ShowDateHandler;
+
+public class NITFrontControllerTest extends HttpServlet {
+	@Override
+	public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		Handler handle=null;
+		String target=null;
+		String lvn=null;
+		RequestDispatcher rd=null;
+		try {
+		if(req.getServletPath().equalsIgnoreCase("/systemdate.do")) {
+			handle=new ShowDateHandler();
+			
+		}//if
+		else if(req.getServletPath().equalsIgnoreCase("/systemdate.do")) {
+			handle=new ShowSystemInfoHandler();
+			lvn=handle.handler(req,res);
+		}//try
+		else {
+			target="/error.jsp";
+		}
+		}
+	}
+	@Override
+	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		doGet(req,res);
+	}
+}

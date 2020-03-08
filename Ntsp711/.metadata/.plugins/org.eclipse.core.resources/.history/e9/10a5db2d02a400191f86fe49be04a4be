@@ -1,0 +1,14 @@
+package com.nt.dao;
+
+import java.util.List;
+
+import com.nt.bo.EmployeeBO;
+
+public class EmployeeDAOImpl implements EmployeeDAO {
+
+	public List<EmployeeBO> getAllEmployee() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

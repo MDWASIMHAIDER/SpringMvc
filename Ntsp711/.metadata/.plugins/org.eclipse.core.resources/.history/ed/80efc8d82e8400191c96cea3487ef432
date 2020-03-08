@@ -1,0 +1,20 @@
+package com.nt.advice;
+
+import org.aopalliance.intercept.MethodInterceptor;
+import org.aopalliance.intercept.MethodInvocation;
+
+public class AroundLogin implements MethodInterceptor {
+
+	public Object invoke(MethodInvocation invocation) throws Throwable {
+		Object retVal=null;
+		Object[] args=null;
+		args=invocation.getArguments();
+		if((Float)args[0]<=50000) {
+			args[1]=(Float)args[1]-0.5f;
+			retVal=invocation.proceed();
+			System.out.println("Exiting from "+invocation.getMethod().getName());
+		}
+		return null;
+	}
+
+}

@@ -1,0 +1,6 @@
+<h1 style="color:green;text-align:center"><u>FrontController</u></h1>
+<div align="center">
+<a href="SytemDate.do">SYSDATE</a><br>
+<a href="SystemInfo.do"></a><br>
+<a href="Index.html">HOME</a>
+</div>

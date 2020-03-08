@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	<bean id="tp1" class="com.nt.beans.TourPlan">
+		<property name="places">
+			<list>
+			<value>Goa</value>
+			<value>Delhi</value>
+			<value>Mumbai</value>
+			</list>
+		</property>
+	</bean>
+	
+	
+	<bean id="tp" class="com.nt.beans.TourPlan"><!-- primary="true" -->
+	<!-- here tp bean id is matchese with 
+	target property name so it executes first
+	or if we want to give priority to other 
+	bean then we have to use primary attribute
+	primary="true"
+	 -->	<property name="places">
+			<list>
+				<value>NewYork</value>
+				<value>Tokyo</value>
+				<value>japan</value>
+				<value>russia</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="tp2" class="com.nt.beans.TourPlan"><!-- primary="true" -->
+		<property name="places">
+			<list>
+				<value>bihar</value>
+				<value>patna</value>
+			</list>
+		</property>
+	</bean>
+	
+	
+	 <bean id="tpp" class="com.nt.beans.TourPlanPrice" autowire="no">
+		<property name="price" value="4500"/>
+	</bean>
+	<!--<bean id="tpp1" class="com.nt.beans.TourPlanPrice" autowire-candidate="false">
+		<property name="price" value="5500"/>
+	</bean> -->
+	
+	<!-- <bean id="agnt" class="com.nt.beans.Agent" autowire="byName"/> -->
+	<!-- <property name="tp" ref="tour1"/>
+		1st target 1st target
+		here no need to configure property 
+		because it automatically detects injection by name of property
+		name of target class and bean id of dependent must be equal
+		 -->
+		 
+	<!-- <bean id="agnt" class="com.nt.beans.Agent" autowire="byType"/> -->
+	<!-- 2nd target in by type anbiguity comes because two dependent bean confg 
+	available so ioc caintiner get confused to whom it inject the value
+	so to solve this problem (primary=true)applied -->
+	
+	
+	
+	
+	
+	<bean id="agnt" class="com.nt.beans.Agent" autowire="constructor"/>
+	<!-- here first it goes to inject tp ...or if we set
+	 primary=true in any bean the that bean will injected
+	 beacuse all beans has same class and its same constructor 
+	 so it get confuse to whom it inject the value so to diffrentiate
+	 use primary="true" ...or it choose automatically
+	 whose bean id and constructor param name is matched
+	 -->	<!-- <constructor-arg ref="tp2"/> -->
+	<!-- </bean> -->
+	
+</beans>

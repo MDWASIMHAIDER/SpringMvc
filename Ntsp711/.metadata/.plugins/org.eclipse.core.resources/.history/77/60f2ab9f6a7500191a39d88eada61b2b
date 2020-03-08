@@ -1,0 +1,23 @@
+package com.nt.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.nt.dao.EmployeeDetailRepository;
+import com.nt.dao.Employee_Detail;
+
+@Service("service")
+public class EmployeeServiceImpl implements EmployeeService {
+	@Autowired
+	private EmployeeDetailRepository edr;
+	@Override
+	public String registerEmp(Employee_Detail ed) {
+		Employee_Detail ed1=null;
+		ed1=edr.save(ed);
+		if(ed1==null)
+			return "emp not register";
+		else
+		return "emp register successfully";
+	}
+
+}

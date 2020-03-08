@@ -1,0 +1,43 @@
+package com.nt.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.nt.bo.EmployeeSearchBO;
+import com.nt.bo.EmployeeSearchResultBO;
+import com.nt.dao.EmployeeSearchDAO;
+import com.nt.dto.EmployeeSearchDTO;
+import com.nt.dto.EmployeeSearchResultDTO;
+
+public class EmployeeSearchServiceImpl implements EmployeeSearchService {
+	private EmployeeSearchDAO dao;
+	
+	public void setDao(EmployeeSearchDAO dao) {
+		this.dao=dao;
+	}
+
+	public List<EmployeeSearchResultDTO> process(EmployeeSearchDTO edto) {
+		EmployeeSearchBO bo=null;
+		bo=new EmployeeSearchBO();
+		bo.setEno(edto.getEno());
+		bo.setEname(edto.getEname());
+		bo.setDesg(edto.getDesg());
+		bo.setSalary(edto.getSalary());
+		List<EmployeeSearchResultBO>listbo=dao.search(bo);
+		
+		List<EmployeeSearchResultDTO> listdto=new ArrayList();
+		for(EmployeeSearchResultBO ebo:listbo) {
+			EmployeeSearchResultDTO dto=new EmployeeSearchResultDTO();
+			dto.setEno(ebo.getEno());
+			dto.setEname(ebo.getEname());
+			dto.setDesg(ebo.getDesg());
+			dto.setDeptno(ebo.getDeptno());
+			dto.setSalary(ebo.getSalary());
+			dto.setMgrno(ebo.getMgrno());
+			listdto.add(dto);
+		}
+		
+		return null;
+	}
+
+}

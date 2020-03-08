@@ -1,0 +1,9 @@
+package com.nt.bo;
+
+public class PatientResultBO {
+	
+	private int  pid;
+	private String pname;
+	private String pdept;
+	private String address;
+}

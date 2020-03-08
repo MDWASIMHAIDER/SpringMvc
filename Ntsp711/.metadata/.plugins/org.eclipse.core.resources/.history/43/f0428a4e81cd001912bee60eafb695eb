@@ -1,0 +1,18 @@
+package com.nt.HashCodeEqualsTest;
+
+public class HashCodeEqualsTest {
+
+	public static void main(String[] args) {
+		Test t=new Test(101);
+		Test t1=new Test(101);
+
+	}
+
+}
+
+class Test{
+	int name;
+	public Test(int name) {
+		this.name=name;
+	}
+}

@@ -1,0 +1,14 @@
+package com.nt.service;
+
+import com.nt.dto.LoginDTO;
+
+@Service("service")
+public class LoginServiceImpl implements LoginService {
+
+	@Override
+	public String LoginAuthentication(LoginDTO dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	<bean id="ci" class="com.nt.beans.CourseInfo">
+		<property name="domain" value="java"/>
+		<property name="institution" value="nit"/>
+		<property name="course">
+			<list>
+				<value>Core-java</value>
+				<value>Adv-Java</value>
+				<value>Spring</value>
+				<value>hibernate</value>
+				<value>Hadoop</value>
+			</list>
+		</property>
+		<property name="faculty">
+			<array>
+				<value>Natraz</value>
+				<value>Ashok</value>
+				<value>Hari</value>
+				<value></value>
+			</array>
+		</property>
+		<property name="price">
+			<map>
+				<entry key="core-java" value="1200"/>
+				<entry key="Adv-java" value="1500"/>
+				<entry key="Spring" value="2000"/>
+				<entry key="Hibernate" value="1100"/>
+				<entry key="Hadoop" value="1500"/>
+			</map>
+		</property>
+		<property name="discount" value="500"/>
+		<property name="courseDuration">
+			<map>
+				<entry key="core-java" value="6"/>
+				<entry key="Adv-java" value="4"/>
+				<entry key="Spring" value="4"/>
+				<entry key="Hibernate" value="5"/>
+				<entry key="Hadoop" value="3"/>
+			</map>
+		</property>
+		
+	</bean>
+	<bean id="st" class="com.nt.beans.StudentInfo">
+		<property name="regNo" value="201"/>
+		<property name="SName" value="wasim"/>
+		<property name="availedCourse">
+			<list>
+				<value>"#{ci.course[0]}"</value>
+				<value>"#{ci.course[1]}"</value>
+				<value>"#{ci.course[2]}"</value>
+			</list>
+		</property>
+		<property name="availedFaculty">
+			<array>
+				<value>"#{ci.faculty[0]}"</value>
+				<value>"#{ci.faculty[2]}"</value>
+			</array>
+		</property>
+		 <property name="availedCoursesDuration">
+			<map>
+				<entry  key="TotalCousrseDuration" value="#{ci.courseDuration['core-java']+ci.courseDuration['Adv-java']+ci.courseDuration['Spring']}"/>
+			</map>
+		</property>
+		<property name="courseDurationTotal" value="#{ci.courseDuration['core-java']+ci.courseDuration['Adv-java']+ci.courseDuration['Spring']+ci.courseDuration['Hibernate']+ci.courseDuration['Hadoop']}"></property>
+		 <property name="courseFeeTotal" value="#{ci.price['core-java']+ci.price['Adv-java']+ci.price['Spring']}"/>
+		<property name="finalFee" value="#{ci.price['core-java']+ci.price['Adv-java']+ci.price['Spring']-ci.discount}"/>
+		<property name="date" value="12/04/1989"></property>
+	</bean>
+
+</beans>

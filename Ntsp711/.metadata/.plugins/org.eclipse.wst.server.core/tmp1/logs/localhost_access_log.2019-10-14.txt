@@ -1,0 +1,9 @@
+127.0.0.1 - - [14/Oct/2019:23:17:40 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [14/Oct/2019:23:17:42 +0530] "GET /MVCProj10-MiniProject/ HTTP/1.1" 200 263
+0:0:0:0:0:0:0:1 - - [14/Oct/2019:23:17:42 +0530] "GET /MVCProj10-MiniProject/images/edit1.png HTTP/1.1" 200 4459
+0:0:0:0:0:0:0:1 - - [14/Oct/2019:23:17:42 +0530] "GET /MVCProj10-MiniProject/images/report1.png HTTP/1.1" 200 6445
+0:0:0:0:0:0:0:1 - - [14/Oct/2019:23:17:42 +0530] "GET /favicon.ico HTTP/1.1" 404 1020
+0:0:0:0:0:0:0:1 - - [14/Oct/2019:23:17:48 +0530] "GET /MVCProj10-MiniProject/report.htm HTTP/1.1" 200 4158
+0:0:0:0:0:0:0:1 - - [14/Oct/2019:23:17:48 +0530] "GET /MVCProj10-MiniProject/images/delete1.png HTTP/1.1" 200 20109
+0:0:0:0:0:0:0:1 - - [14/Oct/2019:23:17:55 +0530] "GET /MVCProj10-MiniProject/edit.htm?id=1007 HTTP/1.1" 200 1059
+0:0:0:0:0:0:0:1 - - [14/Oct/2019:23:18:45 +0530] "POST /MVCProj10-MiniProject/edit.htm?id=1007 HTTP/1.1" 200 4185

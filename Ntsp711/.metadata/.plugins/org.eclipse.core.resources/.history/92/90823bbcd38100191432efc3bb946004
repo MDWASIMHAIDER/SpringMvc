@@ -1,0 +1,12 @@
+package com.nt.service;
+
+import com.nt.dto.EmployeeDTO;
+
+public class EmployeeServiceImpl implements EmployeeService {
+
+	public String saveEmp(EmployeeDTO dto) {
+		
+		return null;
+	}
+
+}

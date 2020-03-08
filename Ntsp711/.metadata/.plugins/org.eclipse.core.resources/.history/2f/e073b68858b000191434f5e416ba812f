@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" isELIgnored="false" %>
+
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<h1 style="color:green;text-align:center">Scientist Records</h1>
+
+<c:choose>
+	<c:when test="${!empty listdto}">
+		<table   border="1"  style="color: red;background: orange;align-self: center"> 
+      <tr><th>SRNO</th><th>ID</th><th>name</th><th>Domain </th> <th>Experience</th><th>PatentsCount </th> <th>Operations </th>  </tr>
+      	<c:forEach var="res" items="${listdto}" >
+      		
+      	</c:forEach>
+      </table>
+	</c:when>
+</c:choose>

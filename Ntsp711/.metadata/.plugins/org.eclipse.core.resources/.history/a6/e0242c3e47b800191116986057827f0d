@@ -1,0 +1,12 @@
+package com.nt.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.nt.service.WishService;
+
+@Controller("wishController")
+public class WishController {
+	@Autowired
+	private WishService service;
+}

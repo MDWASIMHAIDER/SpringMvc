@@ -1,0 +1,47 @@
+package com.nt.dao;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+
+import com.nt.bo.EmployeeSearchBO;
+import com.nt.bo.EmployeeSearchResultBO;
+
+public class EmployeeSearchResultDAO implements EmployeeSearchDAO {
+	
+	private static final String EMP_SEARCH_QUERY="SELECT ENO,ENAME,DESG, SALARY,MGRNO,DEPTNO FROM MVC_LAYERED_EMPLOYEE"
+			+("WHERE ENO IS NOT NULL AND ENO=? ")
+			+("OR ENAME IS NOT NULL AND ENAME=? ")
+			+(" OR JOB IS NOT NULL AND DESG=? ")
+			+(" OR SALARY IS NOT NULL AND SAL=? ");
+	
+	private JdbcTemplate jt;
+	
+	public void setJdbcTemplate(JdbcTemplate jt) {
+		this.jt=jt;
+	}
+	
+	public List<EmployeeSearchResultBO> search(EmployeeSearchBO ebbo) {
+		List<EmployeeSearchResultBO> listresbo=null;
+		listresbo=jt.query(EMP_SEARCH_QUERY,new MyEmpRowMapper() ,ebbo.getEno(),ebbo.getEname(),ebbo.getDesg(),ebbo.getSalary());
+		return listresbo;
+	}
+	public static final class MyEmpRowMapper implements RowMapper<EmployeeSearchResultBO>{
+
+		public EmployeeSearchResultBO mapRow(ResultSet rs, int rowNum) throws SQLException {
+			EmployeeSearchResultBO resbo=null;
+			resbo=new EmployeeSearchResultBO();
+			resbo.setEno(rs.getInt(1));
+			resbo.setEname(rs.getString(2));
+			resbo.setDesg(rs.getString(3));
+			resbo.setSalary(rs.getFloat(4));
+			resbo.setDeptno(rs.getInt(5));
+			resbo.setMgrno(rs.getInt(6));
+			return resbo;
+		}
+	}
+
+}

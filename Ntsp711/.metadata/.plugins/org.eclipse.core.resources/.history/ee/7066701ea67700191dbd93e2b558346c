@@ -1,0 +1,38 @@
+package com.nt.service;
+
+import java.util.List;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.nt.bo.EmployeeBO;
+import com.nt.dao.EmployeeDAO;
+import com.nt.dto.EmployeeDTO;
+
+@Service("service")
+public class EmployeeServiceImpl implements EmmployeeService {
+	 @Autowired
+	private EmployeeDAO dao;
+	 
+	public EmployeeDTO findEmpByNum(int no) {
+		EmployeeDTO dto=null;
+		EmployeeBO bo=dao.findEmpByNo(no);
+		dto=new EmployeeDTO();
+		BeanUtils.copyProperties(bo, dto);
+		return dto;
+	}
+
+	public EmployeeDTO searchEmpByDesg(String desg) {
+		EmployeeDTO dto=null;
+		List<EmployeeBO> listbo=null;
+		dto=new EmployeeDTO();
+		listbo=dao.findEmpByDesg(desg);
+		for(EmployeeBO bo:listbo) {
+			BeanUtils.copyProperties(listbo, dto);
+		}
+		
+		return  dto;
+	}
+
+}

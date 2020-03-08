@@ -1,0 +1,36 @@
+package com.nt.controller;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.validation.BindException;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.SimpleFormController;
+
+import com.nt.command.ScientistCommand;
+import com.nt.dto.ScientistDTO;
+import com.nt.service.ScientistService;
+
+public class ScientistEditController extends SimpleFormController{
+	private ScientistService service;
+
+	public ScientistEditController(ScientistService service) {
+		this.service = service;
+	}
+	@Override
+	protected ModelAndView onSubmit(HttpServletRequest request, HttpServletResponse response, Object command,
+			BindException errors) throws Exception {
+		String resMsg=null;
+		List<ScientistDTO>listdto=null;
+		ScientistCommand cmd=(ScientistCommand) command;
+		ScientistDTO dto=new ScientistDTO();
+		BeanUtils.copyProperties(cmd, dto);
+		resMsg=service.editScientist(dto);
+		listdto=service.fetchAllScientist();
+		return new ModelAndView();
+	}
+	
+}

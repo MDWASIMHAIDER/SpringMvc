@@ -1,0 +1,18 @@
+<%@page import="java.util.*" %>
+<% //read request attribute
+	List<Map<String,Object>>listStud=(List<Map<String,Object>>)request.getAttribute("result");
+	if(listStud!=null){%>
+	<table>
+  <tr>
+    <th>SNO</th><th>SNAME</th><th>SADD</th>
+    
+  </tr>
+  <tr>
+    <td>Row 1: Col 1</td>
+    <td>Row 1: Col 2</td>
+  </tr>
+</table>
+
+	}
+	
+%>

@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    driver-class-name: org.apache.commons.dbcp2.BasicDataSource
+    password: tiger
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+  profiles:
+    active: dev

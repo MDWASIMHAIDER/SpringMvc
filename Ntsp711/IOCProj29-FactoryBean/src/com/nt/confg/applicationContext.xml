@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	
+	<bean id="clfact" class="com.nt.beans.CalanderFactoryBean">
+		<constructor-arg value="2019"/>
+		<constructor-arg value="06"/>
+		<constructor-arg value="04"/>
+	</bean>
+	<bean id="scremd" class="com.nt.beans.ScheduleReminder">
+		<constructor-arg ref="clfact"/>
+	</bean>
+
+</beans>

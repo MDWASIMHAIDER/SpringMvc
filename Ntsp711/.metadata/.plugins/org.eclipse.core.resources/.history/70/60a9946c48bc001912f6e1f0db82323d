@@ -1,0 +1,23 @@
+package com.nt.validator;
+
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
+
+import com.nt.command.EmployeeCommand;
+
+public class FormValidator implements Validator {
+
+	@Override
+	public boolean supports(Class<?> clazz) {
+		return clazz.isAssignableFrom(EmployeeCommand.class);
+	}
+
+	@Override
+	public void validate(Object target, Errors errors) {
+		EmployeeCommand cmd=null;
+		cmd=(EmployeeCommand) target;
+		
+
+	}
+
+}

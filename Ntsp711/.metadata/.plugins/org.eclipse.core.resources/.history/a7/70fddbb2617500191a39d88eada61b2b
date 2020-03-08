@@ -1,0 +1,8 @@
+package com.nt.dao;
+
+public interface Employee_Detail {
+	private Integer eno;
+	private String ename;
+	private String desg;
+	private int salary;
+}

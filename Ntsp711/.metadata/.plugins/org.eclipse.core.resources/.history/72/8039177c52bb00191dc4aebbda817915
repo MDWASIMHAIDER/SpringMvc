@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" isELIgnored="false"%>
+    
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<form:form action="result.htm" method="POST" modelAttribute="empcmd">
+	<table>
+		<tr>Ename:<td><form:input path="ename"/></td></tr>
+		<tr>Desg:<td><form:input path="desg"/></td></tr>
+		<tr>Salary:<td><form:input path="salary"/></td></tr>
+		<tr>Dept:<td><form:input path="deptno"/></td></tr>
+		<tr>MgrNo:<td><form:input path="mgrno"/></td></tr>
+		<input type="submit" value="save"/>
+	</table>
+</form:form>

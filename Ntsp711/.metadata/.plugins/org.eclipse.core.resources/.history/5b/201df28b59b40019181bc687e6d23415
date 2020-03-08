@@ -1,0 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1" %>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+
+	<form:form method="POST" commandName="rcmd">
+		Expected Desg<form:input path="expected_desg"/><br>
+		Expected Intrest<form:input path="expected_intrest"/><br>
+		Expected Age<form:input path="expected_age"/><br>
+		
+		<input type="submit"  name="_target1"  value="previous">
+		<input type="submit"  name="_finish"  value="finish">
+        <input type="submit"  name="_cancel"  value="cancel">
+		</form:form>

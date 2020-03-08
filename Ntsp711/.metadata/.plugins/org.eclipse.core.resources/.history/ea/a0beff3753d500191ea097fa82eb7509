@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Mvc-Exception-Handling-App">
+        <property name="context-root" value="Mvc-Exception-Handling-App"/>
+        <property name="java-output-path" value="/Mvc-Exception-Handling-App/target/classes"/>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,14 @@
+package com.nt.service;
+
+import org.springframework.stereotype.Service;
+
+
+@Service
+public class EmployeeSearchServiceImpl implements EmployeeSearchService {
+
+	@Override
+	public String searchEmp() {
+		return "success";
+	}
+
+}

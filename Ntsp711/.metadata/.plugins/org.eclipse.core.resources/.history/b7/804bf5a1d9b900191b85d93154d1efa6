@@ -1,0 +1,16 @@
+package com.nt.controller;
+
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.nt.service.EmployeeSearchService;
+
+public class EmployeeSearchController {
+	@Autowired
+	private EmployeeSearchService service;
+	
+	public String processEmp(Map<String,Object>map) {
+		
+	}
+}

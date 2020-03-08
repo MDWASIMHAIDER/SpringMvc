@@ -1,0 +1,39 @@
+package com.nt.service;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.nt.dao.BankDAO;
+
+
+@Transactional(transactionManager="dstm",propagation=Propagation.REQUIRED)
+@Service("bankService")
+//@Component("service")
+public class BankServiceImpl implements BankService {
+	
+	@Autowired
+	private BankDAO dao;
+	
+
+
+	
+	
+	@Override
+	public boolean transferMoney(int srcAcno, int destAcno, int amt) throws Exception {
+		int res1=dao.withdraw(amt, srcAcno);
+		int res2=dao.deposite(amt, destAcno);
+		System.out.println(res1+" "+res2);
+		if(res1==0 || res2==0) {
+			System.out.println(" Transaction roll back");
+		//	throw new RuntimeException();
+			throw new RuntimeException();
+		}
+		else {
+			System.out.println("Money transfer success");
+			return true;
+		}
+	}
+}

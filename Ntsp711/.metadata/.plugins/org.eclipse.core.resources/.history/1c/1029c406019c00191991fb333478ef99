@@ -1,0 +1,5 @@
+package com.nt.dao;
+
+public interface DepositeDAO {
+	public boolean deposite(int aacNo,int amt);
+}

@@ -1,0 +1,17 @@
+package com.example.main;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Import;
+
+import com.nt.config.MvcAppConfig;
+
+@SpringBootApplication
+@Import({RootAppConfig.class,MvcAppConfig.class})
+public class MvcBoot2LoginAppApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MvcBoot2LoginAppApplication.class, args);
+	}
+
+}

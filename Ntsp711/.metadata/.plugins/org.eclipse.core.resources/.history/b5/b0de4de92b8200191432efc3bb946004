@@ -1,0 +1,12 @@
+package com.nt.service;
+
+import com.nt.dto.EmployeeDTO;
+
+public class EmployeeServiceImpl implements EmployeeService {
+
+	public EmployeeDTO getEmlDetail(int eid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

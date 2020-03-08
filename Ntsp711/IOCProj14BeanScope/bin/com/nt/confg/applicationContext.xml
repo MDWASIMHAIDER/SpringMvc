@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	<!-- <bean id="vc" class="com.nt.beans.Vechile" scope="singleton">
+		<property name="vname" value="bajaj"/>
+	</bean> -->
+	<!-- <bean id="vc" class="com.nt.beans.Vechile" scope="prototype">
+		<property name="vname" value="bajaj"/>
+	</bean> -->
+	<!-- <bean id="vc" class="com.nt.beans.Vechile" scope="request">
+		<property name="vname" value="bajaj"/>
+	</bean> -->
+	<!-- <bean id="vc" class="com.nt.beans.Vechile" scope="session">
+		<property name="vname" value="bajaj"/>
+	</bean> -->
+	<!-- <bean id="vc" class="com.nt.beans.Vechile" scope="application">
+		<property name="vname" value="bajaj"/>
+	</bean> -->
+	<bean id="vc" class="com.nt.beans.Vechile" scope="websocket">
+		<property name="vname" value="bajaj"/>
+	</bean>
+
+</beans>

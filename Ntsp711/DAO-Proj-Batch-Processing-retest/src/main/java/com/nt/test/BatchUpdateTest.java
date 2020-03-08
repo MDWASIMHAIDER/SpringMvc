@@ -1,0 +1,51 @@
+package com.nt.test;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.nt.dto.PassangerDTO;
+import com.nt.service.PassangerService;
+import com.nt.service.PassangerServiceImpl;
+
+public class BatchUpdateTest {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx=null;
+		ctx=new ClassPathXmlApplicationContext("com/nt/confg/applicationContext.xml");
+		PassangerService service=null;
+		String name=null;
+		String source=null;
+		String dest=null;
+		int price=0;
+		int size=0;
+		PassangerDTO dto=null;
+		List<PassangerDTO>listdto=new ArrayList();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Passaneger source");
+		source=sc.nextLine();
+		System.out.println("Enter Passaneger destination");
+		dest=sc.nextLine();
+		System.out.println("Enter Passaneger bill amount");
+		price=Integer.parseInt(sc.nextLine());
+		System.out.println("Enter Passaneger batch size");
+		size=Integer.parseInt(sc.nextLine());
+		for(int i=1;i<=size;i++) {
+			System.out.println("Enter "+i+" passanger name");
+			name=sc.nextLine();
+			//add to dto
+			dto=new PassangerDTO();
+			dto.setSource(source);
+			dto.setDest(dest);
+			dto.setPrice(price);
+			dto.setName(name);
+			listdto.add(dto);
+		}
+		service=ctx.getBean("service",PassangerServiceImpl.class);
+		System.out.println(service.insertBatchPassanger(listdto));
+	}
+
+}

@@ -1,0 +1,47 @@
+package com.nt.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.BeanUtils;
+
+import com.nt.bo.ScientistBO;
+import com.nt.dao.ScientistDAO;
+import com.nt.dto.ScientistDTO;
+
+public class ScientistServiceImpl implements ScientistService {
+	private ScientistDAO dao;
+	
+	
+	public ScientistServiceImpl(ScientistDAO dao) {
+		this.dao = dao;
+	}
+
+
+	public List<ScientistDTO> fetchAllScientist() {
+		List<ScientistDTO>listdto=new ArrayList();
+		List<ScientistBO>listbo=null;
+		listbo=dao.getAllScientist();
+		listbo.forEach(bo->{
+			ScientistDTO dto=new ScientistDTO();
+			BeanUtils.copyProperties(bo, dto);
+			dto.setSrno(listdto.size()+1);
+			listdto.add(dto);
+		});
+		return listdto;
+	}
+
+
+	@Override
+	public String removeScientist(int id) {
+		int res=0;
+		res=dao.deleteScientist(id);
+		if(res==0) {
+			return "Scientist Deletion Failed";
+		}
+		else {
+			return "Scientist Deleted Succesfully";
+		}
+	}
+
+}

@@ -1,0 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" isELIgnored="false"%>
+
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+
+<table>
+	<form:form method="POST" commandName="rcmd">
+		<tr><td>Name</td><td><form:input path="name"/></td></tr>
+		<tr><td>Address</td><td><form:input path="address"/></td></tr>
+		<tr><td>Gender</td><td><form:radiobutton path="gender" value="male"/></td><td</td></td></tr>
+	</form:form>
+</table>
